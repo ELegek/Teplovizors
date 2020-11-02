@@ -1,0 +1,10 @@
+.user__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user__list-item {
+    display: inline-block;
+    padding-right: 20px;
+}

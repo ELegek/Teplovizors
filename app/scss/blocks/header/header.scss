@@ -3,9 +3,22 @@
     color: #fff;
 }
 
+.header__top {
+    border-bottom: 0.5px solid rgba(255, 255, 255, .15);
+    
+}
+
 .header__inner-top{
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 67px;
+    
+} 
+
+.header__inner-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 99px;
 }
