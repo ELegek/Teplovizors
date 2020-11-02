@@ -43,7 +43,7 @@
     letter-spacing: 0.75px;
     text-transform: uppercase;
     color: #01274F;
-
+    outline: none;
     position: relative;
 
     &:before {
@@ -59,7 +59,9 @@
 
 .slider__img {
     position: relative;
-
+    width: 540px;
+    height: 345px;
+    width: 60%;
     img {
         z-index: 5;
     }
