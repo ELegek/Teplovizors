@@ -8,16 +8,24 @@ $(function () {
         dots: false,
         fade: true,
         autoplay: true,
-        autoplaySpeed: 3000
+        autoplaySpeed: 3000,
+        infinite: true,
     });
 
 
     $('.products__slider').slick({
         arrows: false,
         dots: true,
-        infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
+    });
+
+    $('.slider-blog__wrapper').slick({
+        arrows: false,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
     });
 
 
