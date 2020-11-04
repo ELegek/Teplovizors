@@ -1,0 +1,55 @@
+.popular {
+    padding: 50px 0;
+}
+
+.popular__title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 70px;
+    letter-spacing: -0.01em;
+    color: #333333;
+
+    margin-bottom: 50px;
+}
+
+.popular__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular__item {
+    display: block;
+    padding: 20px;
+
+    width: 255px;
+    height: 255px;
+
+    text-align: center;
+    transition: all .1s linear;
+
+    &:hover {
+        background: radial-gradient(31.2% 38.72% at 50.2% 28.72%, #5D9CDE 0%, rgba(1, 39, 79, 0) 100%), #01274F;
+        border-radius: 7px;
+
+
+        .popular__content {
+            color: #fff;
+        }
+        
+    }
+}
+
+.popular__img {
+    width: 214px;
+    height: 141px;
+}
+
+.popular__content {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #333333;
+}
