@@ -14,6 +14,12 @@
     margin: 0 15px;
 
     position: relative;
+    
+    min-height: 408px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .products__slider-img {
@@ -62,6 +68,7 @@
     color: #F2F2F2;
 
     margin-bottom: 32px;
+    height: 100px;
 }
 
 .products__slider-link {

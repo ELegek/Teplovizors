@@ -1,0 +1,112 @@
+.categories {
+    padding: 30px 0;
+    background: #F8F8F8;
+}
+
+.categories-triggers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories-triggers__item {
+    margin: 0 25px;
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: -0.01em;
+    color: #828282;
+}
+
+.categories-triggers__item.tabs-triggers__item--active {
+    color: #01274F;
+    position: relative;
+    transition: all .3s linear;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #01274F;
+        transition: all .3s linear;
+    }
+}
+
+.categories-item__wrapper {
+    position: relative;
+    max-width: 255px;
+    padding: 36px 25px 30px 20px;
+
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.categories-new__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 15px;
+    background-color: #F2994A;
+    border: none;
+
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+}
+
+.categories-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.categories-price {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+    color: #01274F;
+
+    margin-bottom: 25px;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-basket {
+    background: #024184;
+    border-radius: 7px;
+    padding: 14px 16px 14px 38px;
+    border: none;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.35px;
+    color: #F2F2F2;
+}
+
+.categories-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li+li {
+        margin-left: 17px;
+    }
+}

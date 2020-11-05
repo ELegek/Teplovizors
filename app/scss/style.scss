@@ -14,13 +14,15 @@
 @import "blocks/header/header/header__bottom/header__bottom-box/header__bottom-box";
 @import "blocks/header/header/header__bottom/header__logo/header__logo";
 @import "blocks/header/header/header__bottom/menu__list/menu__list";
-// slider__top =============
+// Blocks =============
 @import "blocks/slider__top/slider__top";
-// products =============
 @import "blocks/products/products";
 @import "blocks/services/services";
 @import "blocks/about/about.scss";
 @import "blocks/popular/popular";
 @import "blocks/slider-blog/slider-blog";
+@import "blocks/tabs/tabs";
+@import "blocks/categories/categories.scss";
+
 
 @import "media";
