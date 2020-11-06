@@ -1,26 +1,18 @@
-.tabs {
+.tabs {}
 
-}
+.tabs-triggers {}
 
-.tabs-triggers {
+.tabs-triggers__item {}
 
-}
-
-.tabs-triggers__item {
-
-}
-
-.tabs-triggers__item--active {
-
-}
+.tabs-triggers__item--active {}
 
 .tabs-content {}
 
 .tabs-content__item {
     display: none;
-
 }
 
 .tabs-content__item--active {
     display: block;
 }
+

@@ -33,7 +33,7 @@ $(function () {
         dots: true,
         centerMode: true,
         slidesToShow: 5,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
     });
 
 
@@ -54,6 +54,8 @@ document.querySelectorAll('.tabs-triggers__item').forEach((item) =>
 
         item.classList.add('tabs-triggers__item--active');
         document.getElementById(id).classList.add('tabs-content__item--active');
+
+        $('.categories-slider').slick('setPosition');
     })
 );
 
