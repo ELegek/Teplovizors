@@ -45,22 +45,19 @@
     }
 }
 
-.categories-slider .slick-slide {
-    opacity: .2;
-}
+
+
+
+
+
 
 .categories-slider__item {
     display: flex;
     justify-content: center;
+
 }
 
-.categories-slider .slick-slide.slick-center {
-    opacity: 1;
-}
 
-.categories-slider .slick-slide::nth-child(2) {
-    opacity: 1;
-}
 
 
 
@@ -121,6 +118,9 @@
     border-radius: 7px;
     padding: 14px 16px 14px 38px;
     border: none;
+
+    cursor: pointer;
+    outline: none;
 
     font-weight: 500;
     font-size: 14px;

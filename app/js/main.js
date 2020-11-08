@@ -18,6 +18,9 @@ $(function () {
         dots: true,
         slidesToShow: 3,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        infinite: true,
     });
 
     $('.slider-blog__wrapper').slick({
@@ -26,6 +29,9 @@ $(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        infinite: true,
     });
 
     $('.categories-slider').slick({
