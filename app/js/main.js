@@ -72,31 +72,18 @@ document.querySelector('.tabs-triggers__item').click();
 
 // Select
 
-let select = function() {
-    let selectHeader = document.querySelectorAll('.select__header');
+const selected = document.querySelector('.selected');
+const optionsContainer = document.querySelector('.options-container');
 
-    let selectItem = document.querySelectorAll('.select__item');
+const optionsList = document.querySelectorAll('.option');
 
-    selectHeader.forEach(item=>{
-        item.addEventListener('click', selectToggle)
+selected.addEventListener('click', () => {
+    optionsContainer.classList.toggle('active');
+})
+
+optionsList.forEach(o => {
+    o.addEventListener('click', () => {
+        selected.innerHTML = o.querySelector('label').innerHTML;
+        optionsContainer.classList.remove('active');
     });
-
-    selectItem.forEach(item=>{
-        item.addEventListener('click', selectChoose)
-    });
-
-    function selectToggle() {  
-        this.parentElement.classList.toggle('is-active');
-    }
-
-    function selectChoose() {
-        let text = this.innerText;
-        let select = this.closest('.select');
-        let currentText = select.querySelector('.select__current');
-
-        currentText.innerText = text;
-        select.classList.remove('is-active');
-    }
-}
-
-select()
+});
