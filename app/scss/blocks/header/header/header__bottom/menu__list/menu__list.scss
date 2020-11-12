@@ -1,5 +1,69 @@
 .header__menu-bottom {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .menu {
+        height: 100%;
+    }
+
     .menu__list {
         text-transform: uppercase;
+        display: flex;
+        height: 100%;
+        position: relative;
+    }
+
+    .menu__list>li {
+        height: 100%;
+        padding: 0 15px;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+
+        transition: all .3s ease;
+    }
+
+    .menu__list>li:hover {
+        background-color: #F2F2F2;
+        border-radius: 5px;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #01274F;
+    }
+
+    .menu__list>li a {
+        display: block;
+
+
+    }
+
+    // Второй уровень меню
+
+    .sub-menu__list-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .sub-menu__list-wrapper>li {
+        width: 16%;
+    }
+
+    .sub-menu__list {
+        position: absolute;
+        left: 0;
+        top: 100px;
+        padding-top: 20px;
+        width: 100%;
+        z-index: 1000;
+
+        .container {
+            width: 1165px;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
     }
 }

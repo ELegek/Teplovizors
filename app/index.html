@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
+  <script src="https://kit.fontawesome.com/77e8183332.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,45 +18,22 @@
       <div class="container">
         <div class="header__inner-top">
 
-          <div class="select-box">
-            <div class="options-container">
-              <div class="option">
-                <input type="radio" class="radio" id="Moscow" name="category">
-                <label for="Moscow">г. Москва</label>
-              </div>
-              <div class="option">
-                <input type="radio" class="radio" id="Saint-Petersburg" name="category">
-                <label for="Saint-Petersburg">г. Санкт-Петербург</label>
-              </div>
-              <div class="option">
-                <input type="radio" class="radio" id="krasnodar" name="category">
-                <label for="krasnodar">г. Краснодар</label>
-              </div>
-              <div class="option">
-                <input type="radio" class="radio" id="taganrog" name="category">
-                <label for="taganrog">г. Таганрог</label>
-              </div>
-              <div class="option">
-                <input type="radio" class="radio" id="kazan" name="category">
-                <label for="kazan">г. Казань</label>
-              </div>
-              <div class="option">
-                <input type="radio" class="radio" id="kazan" name="category">
-                <label for="kazan">г. Казань</label>
-              </div>
-              <div class="option">
-                <input type="radio" class="radio" id="kazan" name="category">
-                <label for="kazan">г. Казань</label>
-              </div>
-              <div class="option">
-                <input type="radio" class="radio" id="kazan" name="category">
-                <label for="kazan">г. Казань</label>
-              </div>
+          <div class="select">
+            <input class="select__input" type="hidden" name="city">
+            <div class="select__curent-wrap">
+              <button class="select__current">г. Москва</button>
+              <i class="arrow-select fas fa-angle-down"></i>
             </div>
-            <div class="selected">
-              г. Москва
+            <div class="select__list">
+              <button class="select__item" data-value="one">г. Краснодар</button>
+              <button class="select__item" data-value="two">г. Санкт-Петербург</button>
+              <button class="select__item" data-value="three">г. Казань</button>
+              <button class="select__item" data-value="four">г. Калининград</button>
+              <button class="select__item" data-value="five">г. Сочи</button>
+              <button class="select__item" data-value="five">г. Москва</button>
             </div>
           </div>
+
 
           <div class="header__menu">
             <ul class="menu__list">
@@ -76,10 +54,193 @@
       <div class="container">
         <div class="header__inner-bottom">
           <div class="header__menu-bottom">
-            <ul class="menu__list">
-              <li class="menu__list-link"><a href="#">Тепловизоры</a></li>
-              <li class="menu__list-link"><a href="#">Бренды</a></li>
-            </ul>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li>
+                  <a class="menu__link" href="#">Тепловизоры</a>
+                  <ul class="sub-menu__list">
+                    <div class="container">
+                      <div class="sub-menu__list-wrapper">
+                        <li>
+                          <img src="images/sub-menu-icon1.png" alt="">
+                          <span>Бинокли</span>
+                          <ul class="sub-menu__list-item">
+                            <li>
+                              <a href="#" class="sub-menu__link-item">ATN</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Dedal</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Fortuna</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Pulsar</a>
+                            </li>
+                          </ul>
+                          <a href="#" class="sub-menu__link-btn">Смотреть все</a>
+                        </li>
+                        <li>
+                          <img src="images/sub-menu-icon1.png" alt="">
+                          <span>Бинокли</span>
+                          <ul class="sub-menu__list-item">
+                            <li>
+                              <a href="#" class="sub-menu__link-item">ATN</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Dedal</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Fortuna</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Pulsar</a>
+                            </li>
+                          </ul>
+                          <a href="#" class="sub-menu__link-btn">Смотреть все</a>
+                        </li>
+                        <li>
+                          <img src="images/sub-menu-icon1.png" alt="">
+                          <span>Бинокли</span>
+                          <ul class="sub-menu__list-item">
+                            <li>
+                              <a href="#" class="sub-menu__link-item">ATN</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Dedal</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Fortuna</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Pulsar</a>
+                            </li>
+                          </ul>
+                          <a href="#" class="sub-menu__link-btn">Смотреть все</a>
+                        </li>
+                        <li>
+                          <img src="images/sub-menu-icon1.png" alt="">
+                          <span>Бинокли</span>
+                          <ul class="sub-menu__list-item">
+                            <li>
+                              <a href="#" class="sub-menu__link-item">ATN</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Dedal</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Fortuna</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Pulsar</a>
+                            </li>
+                          </ul>
+                          <a href="#" class="sub-menu__link-btn">Смотреть все</a>
+                        </li>
+                        <li>
+                          <img src="images/sub-menu-icon1.png" alt="">
+                          <span>Бинокли</span>
+                          <ul class="sub-menu__list-item">
+                            <li>
+                              <a href="#" class="sub-menu__link-item">ATN</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Dedal</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Fortuna</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Pulsar</a>
+                            </li>
+                          </ul>
+                          <a href="#" class="sub-menu__link-btn">Смотреть все</a>
+                        </li>
+                        <li>
+                          <img src="images/sub-menu-icon1.png" alt="">
+                          <span>Бинокли</span>
+                          <ul class="sub-menu__list-item">
+                            <li>
+                              <a href="#" class="sub-menu__link-item">ATN</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Dedal</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Fortuna</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Pulsar</a>
+                            </li>
+                          </ul>
+                          <a href="#" class="sub-menu__link-btn">Смотреть все</a>
+                        </li>
+                        <li>
+                          <img src="images/sub-menu-icon1.png" alt="">
+                          <span>Бинокли</span>
+                          <ul class="sub-menu__list-item">
+                            <li>
+                              <a href="#" class="sub-menu__link-item">ATN</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Dedal</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Fortuna</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Pulsar</a>
+                            </li>
+                          </ul>
+                          <a href="#" class="sub-menu__link-btn">Смотреть все</a>
+                        </li>
+                        <li>
+                          <img src="images/sub-menu-icon1.png" alt="">
+                          <span>Бинокли</span>
+                          <ul class="sub-menu__list-item">
+                            <li>
+                              <a href="#" class="sub-menu__link-item">ATN</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Dedal</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Fortuna</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Pulsar</a>
+                            </li>
+                          </ul>
+                          <a href="#" class="sub-menu__link-btn">Смотреть все</a>
+                        </li>
+                        <li>
+                          <img src="images/sub-menu-icon1.png" alt="">
+                          <span>Бинокли</span>
+                          <ul class="sub-menu__list-item">
+                            <li>
+                              <a href="#" class="sub-menu__link-item">ATN</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Dedal</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Fortuna</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Pulsar</a>
+                            </li>
+                          </ul>
+                          <a href="#" class="sub-menu__link-btn">Смотреть все</a>
+                        </li>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li>
+                  <a class="menu__link" href="#">Бренды</a>
+                </li>
+              </ul>
+            </nav>
           </div>
           <a href="#" class="header__logo">
             <img src="images/logo.png" alt="logo">

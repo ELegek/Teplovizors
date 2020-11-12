@@ -72,18 +72,55 @@ document.querySelector('.tabs-triggers__item').click();
 
 // Select
 
-const selected = document.querySelector('.selected');
-const optionsContainer = document.querySelector('.options-container');
+document.querySelectorAll('.select').forEach(select => { //Выбриаем все выпадающие списки на странице
 
-const optionsList = document.querySelectorAll('.option');
+    let selectCurrent = select.querySelector('.select__current'),
+        selectList = select.querySelector('.select__list'),
+        selectInput = select.querySelector('.select__input'),
+        selectArrow = select.querySelector('.arrow-select'),
+        selectItem = select.querySelectorAll('.select__item');
 
-selected.addEventListener('click', () => {
-    optionsContainer.classList.toggle('active');
+
+    //по клику добавляем/удалям класс
+    selectCurrent.addEventListener('click', () => {
+        selectList.classList.toggle('select__list--show')
+    })
+
+    //по клику добавляем/удалям класс
+    selectArrow.addEventListener('click', () => {
+        selectList.classList.toggle('select__list--show')
+    })
+
+    //обходим элементы списка
+    selectItem.forEach(item => {
+
+        //обрабатываем событие клик по элементу
+        item.addEventListener('click', () => {
+
+            //получаем значение из data-атрибута
+            let itemValue = item.getAttribute('data-value')
+
+            //получаем содержание элемента (текст)
+            let itemText = item.textContent
+
+            //присваиваем инпуту ранее полученное значение из data-атрибута
+            selectInput.value = itemValue
+
+            //присваиваем текущее значение (текст)
+            selectCurrent.textContent = itemText
+
+            //скрываем выпадающий список
+            selectListHide()
+        })
+    })
+
+    // функция закрытия выпадающего списка
+    let selectListHide = () => {
+        selectList.classList.remove('select__list--show')
+    }
+    //Закрываем выпадающий сисок, если клик был вне области
+    document.addEventListener('mouseup', (e) => {
+        if (!select.contains(e.target)) selectListHide()
+    })
+
 })
-
-optionsList.forEach(o => {
-    o.addEventListener('click', () => {
-        selected.innerHTML = o.querySelector('label').innerHTML;
-        optionsContainer.classList.remove('active');
-    });
-});
