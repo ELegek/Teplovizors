@@ -1,0 +1,29 @@
+.requisites {
+  padding-bottom: 120px;
+}
+
+.requisites-title {
+  margin-bottom: 20px;
+}
+
+.requisites-list {
+  max-width: 540px;
+}
+
+.requisites-item {
+
+  padding: 14px 20px;
+
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #4F4F4F;
+
+  span {
+    font-weight: bold;
+  }
+}
+
+.requisites-item:nth-child(2n+1) {
+  background: rgba(2, 65, 132, 0.05);
+}
