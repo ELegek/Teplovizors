@@ -6,6 +6,7 @@
   display: flex;
   align-items: start;
   justify-content: space-between;
+  padding-bottom: 100px;
 }
 
 .guarantee-left {
@@ -85,4 +86,81 @@
   letter-spacing: -0.01em;
   color: #333333;
   margin-bottom: 10px;
+}
+
+.guarantee-content-list {
+  li {
+    margin-bottom: 10px;
+    padding-left: 40px;
+    position: relative;
+  }
+
+  p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: #333333;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 16px;
+      height: 5px;
+      content: '';
+      background: linear-gradient(180deg, #FFD519 0%, #FF7900 100%);
+      border-radius: 1px;
+    }
+  }
+}
+
+.guarantee-attention {
+  border: 1px solid #E0E0E0;
+  border-radius: 7px;
+  padding: 11px 16px;
+  margin-bottom: 30px;
+}
+
+.guarantee-attention-title {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #EB5757;
+  padding-left: 21px;
+  position: relative;
+  margin-bottom: 6px;
+
+  &:before {
+    content: url(../../../images/attention-icon.svg);
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.guarantee-attention-text {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #333333;
+}
+
+.guarantee-box {
+  border-top: 0.7px solid rgba(79, 79, 79, 0.15);
+  border-bottom: 0.7px solid rgba(79, 79, 79, 0.15);
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.guarantee-content-footer {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #4F4F4F;
 }
