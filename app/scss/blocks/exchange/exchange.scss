@@ -1,0 +1,63 @@
+.exchange {
+  .guarantee-link-exchange {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.01em;
+    color: #01274F;
+
+    &:before {
+      content: url(../../../images/down-right-blue.svg);
+      position: absolute;
+      left: 0;
+      top: 24px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .guarantee-link-guarantee {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.01em;
+    color: #333333;
+
+    &:before {
+      content: url(../../../images/guarantee-gray.svg);
+      position: absolute;
+      left: 0;
+      top: 24px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.exchange-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: -0.01em;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.guarantee-content {
+  span {
+    color: #01274F;
+    font-weight: 600;
+  }
+}
+
+.exchange-box {
+  padding-top: 20px;
+  border-top: 0.7px solid rgba(79, 79, 79, 0.15);
+}
+
+.exchange-wrap {
+  margin-top: 20px;
+  background: #F8F8F8;
+  border-radius: 7px;
+  padding: 20px;
+}
