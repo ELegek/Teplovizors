@@ -180,7 +180,9 @@
   border-radius: 2px;
 
   svg {
-    opacity: .1;
+    path {
+      stroke: #fff;
+    }
   }
 
 }

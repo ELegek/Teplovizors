@@ -45,6 +45,9 @@ $(function () {
 
 
 });
+
+
+// Tabs ==========
 const tabsTriggerItem = document.querySelectorAll('.tabs-triggers__item');
 if (tabsTriggerItem.length > 0) {
     tabsTriggerItem.forEach((item) =>
