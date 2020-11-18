@@ -1,0 +1,186 @@
+.catalog__wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.catalog-quantity {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: -0.01em;
+  color: #BDBDBD;
+  margin-left: 25px;
+}
+
+.catalog-link__question {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  color: #01274F;
+  position: relative;
+  margin-left: 88px;
+  border-bottom: 1px solid rgba(1, 39, 79, 0);
+  transition: all .2s ease;
+
+  &:before {
+    position: absolute;
+    content: url(../../../images/question-icon.png);
+    left: -25px;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+  }
+
+  &:hover {
+    border-bottom: 1px solid rgba(1, 39, 79, 1);
+  }
+
+
+}
+
+// Catalog__filter =======================================
+.catalog__filter {
+  margin-bottom: 42px;
+}
+
+.catalog-list {
+  display: flex;
+}
+
+.catalog-link {
+  display: flex;
+  justify-content: space-between;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #4F4F4F;
+
+  padding: 6px 8px;
+
+  a {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: '';
+      bottom: -2px;
+      width: 100%;
+      border-bottom: 0.7px dashed #4F4F4F;
+    }
+  }
+
+  p {
+    margin-left: 5px;
+  }
+}
+
+.catalog-link+.catalog-link {
+  margin-left: 20px;
+}
+
+.catalog-link.catalog-link__active {
+  background: #c0c0c0;
+  border-radius: 4px;
+  border-bottom: none;
+
+  a {
+    &:before {
+      border-bottom: none;
+    }
+  }
+}
+
+// Catalog__sort =======================================
+
+.catalog-sort {
+  padding-bottom: 26px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog-sort__list {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.catalog-sort__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #9F9F9F;
+}
+
+.catalog-sort__link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #333333;
+  position: relative;
+
+  margin-left: 25px;
+}
+
+.catalog-sort__link.catalog-sort__link-active {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #01274F;
+
+  &:after {
+    position: absolute;
+    content: url(../../../images/sort-icon.png);
+    right: -13px;
+    top: -1px;
+    width: 9px;
+    height: 6px;
+  }
+}
+
+// catalog-sort__btn ==========
+
+.catalog-sort__btn {
+  display: flex;
+  align-items: center;
+}
+
+.catalog-sort__view {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #9F9F9F;
+}
+
+.sort__btn {
+  margin-left: 12px;
+  border: none;
+  background-color: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  opacity: 1;
+  outline: none;
+  cursor: pointer;
+}
+
+.sort__btn.sort__btn-active {
+  background: linear-gradient(180deg, #FFD519 0%, #FF7900 100%);
+  border-radius: 2px;
+
+  svg {
+    opacity: .1;
+  }
+
+}
