@@ -1,0 +1,77 @@
+.catalog__inner {
+  border-top: 0.7px solid rgba(79, 79, 79, .15);
+  padding-top: 30px;
+}
+
+.catalog__inner-aside {
+  max-width: 260px;
+}
+
+.aside-filter__item-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #333333;
+
+  margin-bottom: 18px;
+}
+
+// RangeSlider
+
+.irs-from {
+  display: none;
+}
+
+.irs-to {
+  display: none;
+}
+
+
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  visibility: visible !important;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #BDBDBD;
+  width: 120px;
+  height: 42px;
+
+  background: #FCFCFD;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  padding: 11px 5px 11px 37px;
+  cursor: pointer;
+  transition: all .2s ease;
+
+  &:hover {
+    border: 1px solid #01274F;
+    color: #333333;
+  }
+}
+
+.irs--flat .irs-min::before {
+  content: 'от';
+  position: absolute;
+  left: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.irs--flat .irs-max::before {
+  content: 'до';
+  position: absolute;
+  left: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.aside-filter__item-title.aside-filter__item-active .aside-filter__item-content {
+  display: none;
+}

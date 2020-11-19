@@ -156,3 +156,18 @@ $(document).ready(function () {
     });
 
 });
+
+
+// RangeSlider ============
+
+$(".js-range-slider").ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 1200000,
+    from: 0,
+    to: 800000,
+    grid: false,
+});
+
+
+// Aside DropDown
