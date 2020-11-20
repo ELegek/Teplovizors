@@ -72,6 +72,9 @@
   color: #333333;
 }
 
-.aside-filter__item-title.aside-filter__item-active .aside-filter__item-content {
-  display: none;
+.aside-filter__item-title.aside-filter__item-active {
+  .aside-filter__item-content {
+    display: none;
+  }
+
 }

@@ -44,6 +44,9 @@ $(function () {
 
 
 
+
+    $('.filter-styler').styler();
+
 });
 
 
@@ -170,4 +173,4 @@ $(".js-range-slider").ionRangeSlider({
 });
 
 
-// Aside DropDown
+// JQuery form styler
