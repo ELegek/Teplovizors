@@ -1,6 +1,6 @@
 .catalog__inner {
   border-top: 0.7px solid rgba(79, 79, 79, .15);
-  padding-top: 30px;
+  padding: 30px 0;
 }
 
 .catalog__inner-aside {
@@ -8,7 +8,9 @@
 }
 
 .aside-filter__item-drop {
-  margin: 40px 0;
+  margin-bottom: 20px;
+  border-bottom: 0.7px solid rgba(79, 79, 79, .15);
+  padding-bottom: 50px;
 }
 
 .aside-filter__item-title {
@@ -75,6 +77,28 @@
   color: #BDBDBD;
 }
 
+
+.aside-filter-btn {
+  width: 100%;
+  border: 1px solid #024184;
+  border-radius: 5px;
+  padding: 10px 0;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.35px;
+  color: #024184;
+
+  transition: all .3s ease;
+
+  &:hover {
+    background-color: #024184;
+    color: #fff;
+  }
+}
+
 // RangeSlider
 
 .irs-from {
@@ -128,4 +152,34 @@
   font-size: 14px;
   line-height: 20px;
   color: #333333;
+}
+
+.irs--flat .irs-line {
+  height: 4px;
+  top: 55px;
+  background-color: #BDBDBD;
+}
+
+.irs--flat .irs-bar {
+  height: 4px;
+  top: 55px;
+  background-color: #f1be30;
+}
+
+.irs-bar {
+  width: 100%;
+}
+
+.irs--flat .irs-handle {
+  top: 49px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.irs--flat .irs-handle>i:first-child {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #FFD519 0%, #FF7900 100%);
 }
