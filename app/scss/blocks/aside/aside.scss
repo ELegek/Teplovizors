@@ -7,6 +7,10 @@
   max-width: 260px;
 }
 
+.aside-filter__item-drop {
+  margin: 40px 0;
+}
+
 .aside-filter__item-title {
   font-weight: bold;
   font-size: 16px;
@@ -15,6 +19,60 @@
   color: #333333;
 
   margin-bottom: 18px;
+}
+
+.fliter__item-drop {
+  margin-bottom: 18px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: url(../../../images/arrow-drop.svg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    transform: rotate(0deg);
+    transition: all .3s ease;
+  }
+}
+
+.fliter__item-drop--active::before {
+  transform: rotate(180deg);
+}
+
+.aside-filter-box {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+
+  label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  input {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  span {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #BDBDBD;
+    margin-left: 10px;
+  }
+}
+
+.aside-filter-box.inactive {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #BDBDBD;
 }
 
 // RangeSlider
@@ -70,11 +128,4 @@
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-}
-
-.aside-filter__item-title.aside-filter__item-active {
-  .aside-filter__item-content {
-    display: none;
-  }
-
 }

@@ -44,8 +44,15 @@ $(function () {
 
 
 
+    // JQuery form styler
 
-    $('.filter-styler').styler();
+    $('.fliter__item-drop').on('click', function () {
+        $(this).toggleClass('fliter__item-drop--active');
+        $(this).next().slideToggle();
+    });
+
+
+
 
 });
 
@@ -171,6 +178,3 @@ $(".js-range-slider").ionRangeSlider({
     to: 800000,
     grid: false,
 });
-
-
-// JQuery form styler
