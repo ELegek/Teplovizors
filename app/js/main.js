@@ -53,6 +53,13 @@ $(function () {
 
 
 
+    // RateYo 
+
+    $(".rate-yo").rateYo({
+        rating: 3.6
+    });
+
+
 
 });
 
