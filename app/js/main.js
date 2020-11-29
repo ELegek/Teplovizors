@@ -52,16 +52,9 @@ $(function () {
     });
 
 
-
-    // RateYo 
-
-    $(".rate-yo").rateYo({
-        rating: 3.6
-    });
-
-
-
 });
+
+
 
 
 // Tabs ==========
@@ -150,38 +143,52 @@ document.querySelectorAll('.select').forEach(select => { //Выбриаем вс
 
 })
 
+$(function () {
+    // Форма обратной связи 
 
-// Форма обратной связи 
+    $(document).ready(function () {
 
-$(document).ready(function () {
-
-    //E-mail Ajax Send
-    $("form").submit(function () { //Change
-        var th = $(this);
-        $.ajax({
-            type: "POST",
-            url: "mail.php", //Change
-            data: th.serialize()
-        }).done(function () {
-            alert("Thank you!");
-            setTimeout(function () {
-                // Done Functions
-                th.trigger("reset");
-            }, 1000);
+        //E-mail Ajax Send
+        $("form").submit(function () { //Change
+            var th = $(this);
+            $.ajax({
+                type: "POST",
+                url: "mail.php", //Change
+                data: th.serialize()
+            }).done(function () {
+                alert("Thank you!");
+                setTimeout(function () {
+                    // Done Functions
+                    th.trigger("reset");
+                }, 1000);
+            });
+            return false;
         });
-        return false;
+
+    });
+});
+
+
+$(function () {
+    // RangeSlider ============
+
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 1200000,
+        from: 0,
+        to: 800000,
+        grid: false,
     });
 
 });
 
 
-// RangeSlider ============
+$(function () {
+    // RateYo 
 
-$(".js-range-slider").ionRangeSlider({
-    type: "double",
-    min: 0,
-    max: 1200000,
-    from: 0,
-    to: 800000,
-    grid: false,
+    $('.rate-yo').rateYo({
+        rating: 3.6
+    });
+
 });
