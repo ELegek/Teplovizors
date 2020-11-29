@@ -188,7 +188,10 @@ $(function () {
     // RateYo 
 
     $('.rate-yo').rateYo({
-        rating: 3.6
+        ratedFill: "#FF7900",
+        spacing: "5px",
+        normalFill: "#BDBDBD",
+        starWidth: "13px"
     });
 
 });
