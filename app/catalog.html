@@ -405,8 +405,8 @@
           </ul>
           <div class="catalog-sort__btn">
             <p class="catalog-sort__view">Вид:</p>
-            <button class="sort__btn sort__btn-active"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+            <button class="sort__btn-grid sort__filter-btn sort__btn-active"><svg width="16" height="16"
+                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.66667 2H2V6.66667H6.66667V2Z" stroke="#333333" stroke-width="1.33333" stroke-linecap="round"
                   stroke-linejoin="round" />
                 <path d="M14.0007 2H9.33398V6.66667H14.0007V2Z" stroke="#333333" stroke-width="1.33333"
@@ -416,7 +416,7 @@
                 <path d="M6.66667 9.33301H2V13.9997H6.66667V9.33301Z" stroke="#333333" stroke-width="1.33333"
                   stroke-linecap="round" stroke-linejoin="round" />
               </svg></button>
-            <button class="sort__btn">
+            <button class="sort__btn-list sort__filter-btn">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.33398 4H14.0007" stroke="#333333" stroke-width="1.33333" stroke-linecap="round"
                   stroke-linejoin="round" />
@@ -603,395 +603,921 @@
         </aside>
         <div class="catalog__inner-list">
           <div class="catalog__inner-item">
-            <div class="catalog__inner-compare">
-              <img src="images/categories-chart.svg" alt="">
-              <p>Сравнить</p>
+            <div class="catalog-box-img">
+              <div class="catalog__inner-compare">
+                <img src="images/categories-chart.svg" alt="">
+                <p>Сравнить</p>
+              </div>
+              <div class="catalog__inner-img">
+                <img src="images/catalog1.png" alt="">
+              </div>
+              <a class="rate" href="#">
+                <div class="rate-yo" data-rateyo-rating='4'></div>
+              </a>
             </div>
-            <div class="catalog__inner-img">
-              <img src="images/catalog1.png" alt="">
+            <div class="catalog-box-descr">
+              <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+              <div class="catalog__inner-available">
+                <span></span>
+              </div>
+              <div class="catalog__inner-price">
+                <span>879 000 руб.</span>
+              </div>
+              <div class="catalog__inner-descr">
+                <ul class="catalog__inner-descr-list">
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Производство</p>
+                    <p class="descr-right">Pulsar</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Дистанция обнаружения человека</p>
+                    <p class="descr-right">1350 м</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Разрешение матрицы</p>
+                    <p class="descr-right">384x288 px</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Питание</p>
+                    <p class="descr-right">IPS5, IPS10</p>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <a class="rate" href="#">
-              <div class="rate-yo" data-rateyo-rating='4'></div>
-            </a>
-            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
-            <div class="catalog__inner-available">
-              <span></span>
-            </div>
-            <div class="catalog__inner-price">
-              <span>879 000 руб.</span>
-            </div>
-            <div class="catalog__inner-buttons">
-              <button class="catalog__inner-button">В корзину</button>
-              <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
-            </div>
-            <div class="catalog__inner-buy">
-              <a href="#">Купить в один клик</a>
-            </div>
-          </div>
-          <div class="catalog__inner-item">
-            <div class="catalog__inner-compare">
-              <img src="images/categories-chart.svg" alt="">
-              <p>Сравнить</p>
-            </div>
-            <div class="catalog__inner-img">
-              <img src="images/catalog1.png" alt="">
-            </div>
-            <a class="rate" href="#">
-              <div class="rate-yo" data-rateyo-rating='4'></div>
-            </a>
-            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
-            <div class="catalog__inner-available">
-              <span></span>
-            </div>
-            <div class="catalog__inner-price">
-              <span>879 000 руб.</span>
-            </div>
-            <div class="catalog__inner-buttons">
-              <button class="catalog__inner-button">В корзину</button>
-              <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
-            </div>
-            <div class="catalog__inner-buy">
-              <a href="#">Купить в один клик</a>
-            </div>
-          </div>
-          <div class="catalog__inner-item">
-            <div class="catalog__inner-compare">
-              <img src="images/categories-chart.svg" alt="">
-              <p>Сравнить</p>
-            </div>
-            <div class="catalog__inner-img">
-              <img src="images/catalog1.png" alt="">
-            </div>
-            <a class="rate" href="#">
-              <div class="rate-yo" data-rateyo-rating='4'></div>
-            </a>
-            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
-            <div class="catalog__inner-available">
-              <span></span>
-            </div>
-            <div class="catalog__inner-price">
-              <span>879 000 руб.</span>
-            </div>
-            <div class="catalog__inner-buttons">
-              <button class="catalog__inner-button">В корзину</button>
-              <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
-            </div>
-            <div class="catalog__inner-buy">
-              <a href="#">Купить в один клик</a>
+            <div class="catalog-box-btn">
+              <div class="catalog__inner-buttons">
+                <div class="catalog__inner-compare-icon">
+                  <img src="images/categories-chart.svg" alt="">
+                  <p>Сравнить</p>
+                </div>
+                <div class="catalog__inner-like-icon">
+                  <img src="images/like.svg" alt="">
+                  <p>В избранное</p>
+                </div>
+                <button class="catalog__inner-button">В корзину</button>
+                <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
+                <a href="#" class="buy-click">Купить в один клик</a>
+              </div>
+              <div class="catalog__inner-buy">
+                <a href="#">Купить в один клик</a>
+              </div>
             </div>
           </div>
           <div class="catalog__inner-item">
-            <div class="catalog__inner-compare">
-              <img src="images/categories-chart.svg" alt="">
-              <p>Сравнить</p>
+            <div class="catalog-box-img">
+              <div class="catalog__inner-compare">
+                <img src="images/categories-chart.svg" alt="">
+                <p>Сравнить</p>
+              </div>
+              <div class="catalog__inner-img">
+                <img src="images/catalog1.png" alt="">
+              </div>
+              <a class="rate" href="#">
+                <div class="rate-yo" data-rateyo-rating='4'></div>
+              </a>
             </div>
-            <div class="catalog__inner-img">
-              <img src="images/catalog1.png" alt="">
+            <div class="catalog-box-descr">
+              <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+              <div class="catalog__inner-available">
+                <span></span>
+              </div>
+              <div class="catalog__inner-price">
+                <span>879 000 руб.</span>
+              </div>
+              <div class="catalog__inner-descr">
+                <ul class="catalog__inner-descr-list">
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Производство</p>
+                    <p class="descr-right">Pulsar</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Дистанция обнаружения человека</p>
+                    <p class="descr-right">1350 м</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Разрешение матрицы</p>
+                    <p class="descr-right">384x288 px</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Питание</p>
+                    <p class="descr-right">IPS5, IPS10</p>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <a class="rate" href="#">
-              <div class="rate-yo" data-rateyo-rating='4'></div>
-            </a>
-            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
-            <div class="catalog__inner-available">
-              <span></span>
-            </div>
-            <div class="catalog__inner-price">
-              <span>879 000 руб.</span>
-            </div>
-            <div class="catalog__inner-buttons">
-              <button class="catalog__inner-button">В корзину</button>
-              <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
-            </div>
-            <div class="catalog__inner-buy">
-              <a href="#">Купить в один клик</a>
-            </div>
-          </div>
-          <div class="catalog__inner-item">
-            <div class="catalog__inner-compare">
-              <img src="images/categories-chart.svg" alt="">
-              <p>Сравнить</p>
-            </div>
-            <div class="catalog__inner-img">
-              <img src="images/catalog1.png" alt="">
-            </div>
-            <a class="rate" href="#">
-              <div class="rate-yo" data-rateyo-rating='4'></div>
-            </a>
-            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
-            <div class="catalog__inner-available">
-              <span></span>
-            </div>
-            <div class="catalog__inner-price">
-              <span>879 000 руб.</span>
-            </div>
-            <div class="catalog__inner-buttons">
-              <button class="catalog__inner-button">В корзину</button>
-              <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
-            </div>
-            <div class="catalog__inner-buy">
-              <a href="#">Купить в один клик</a>
-            </div>
-          </div>
-          <div class="catalog__inner-item">
-            <div class="catalog__inner-compare">
-              <img src="images/categories-chart.svg" alt="">
-              <p>Сравнить</p>
-            </div>
-            <div class="catalog__inner-img">
-              <img src="images/catalog1.png" alt="">
-            </div>
-            <a class="rate" href="#">
-              <div class="rate-yo" data-rateyo-rating='4'></div>
-            </a>
-            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
-            <div class="catalog__inner-available">
-              <span></span>
-            </div>
-            <div class="catalog__inner-price">
-              <span>879 000 руб.</span>
-            </div>
-            <div class="catalog__inner-buttons">
-              <button class="catalog__inner-button">В корзину</button>
-              <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
-            </div>
-            <div class="catalog__inner-buy">
-              <a href="#">Купить в один клик</a>
+            <div class="catalog-box-btn">
+              <div class="catalog__inner-buttons">
+                <div class="catalog__inner-compare-icon">
+                  <img src="images/categories-chart.svg" alt="">
+                  <p>Сравнить</p>
+                </div>
+                <div class="catalog__inner-like-icon">
+                  <img src="images/like.svg" alt="">
+                  <p>В избранное</p>
+                </div>
+                <button class="catalog__inner-button">В корзину</button>
+                <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
+                <a href="#" class="buy-click">Купить в один клик</a>
+              </div>
+              <div class="catalog__inner-buy">
+                <a href="#">Купить в один клик</a>
+              </div>
             </div>
           </div>
           <div class="catalog__inner-item">
-            <div class="catalog__inner-compare">
-              <img src="images/categories-chart.svg" alt="">
-              <p>Сравнить</p>
+            <div class="catalog-box-img">
+              <div class="catalog__inner-compare">
+                <img src="images/categories-chart.svg" alt="">
+                <p>Сравнить</p>
+              </div>
+              <div class="catalog__inner-img">
+                <img src="images/catalog1.png" alt="">
+              </div>
+              <a class="rate" href="#">
+                <div class="rate-yo" data-rateyo-rating='4'></div>
+              </a>
             </div>
-            <div class="catalog__inner-img">
-              <img src="images/catalog1.png" alt="">
+            <div class="catalog-box-descr">
+              <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+              <div class="catalog__inner-available">
+                <span></span>
+              </div>
+              <div class="catalog__inner-price">
+                <span>879 000 руб.</span>
+              </div>
+              <div class="catalog__inner-descr">
+                <ul class="catalog__inner-descr-list">
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Производство</p>
+                    <p class="descr-right">Pulsar</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Дистанция обнаружения человека</p>
+                    <p class="descr-right">1350 м</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Разрешение матрицы</p>
+                    <p class="descr-right">384x288 px</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Питание</p>
+                    <p class="descr-right">IPS5, IPS10</p>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <a class="rate" href="#">
-              <div class="rate-yo" data-rateyo-rating='4'></div>
-            </a>
-            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
-            <div class="catalog__inner-available">
-              <span></span>
-            </div>
-            <div class="catalog__inner-price">
-              <span>879 000 руб.</span>
-            </div>
-            <div class="catalog__inner-buttons">
-              <button class="catalog__inner-button">В корзину</button>
-              <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
-            </div>
-            <div class="catalog__inner-buy">
-              <a href="#">Купить в один клик</a>
-            </div>
-          </div>
-          <div class="catalog__inner-item">
-            <div class="catalog__inner-compare">
-              <img src="images/categories-chart.svg" alt="">
-              <p>Сравнить</p>
-            </div>
-            <div class="catalog__inner-img">
-              <img src="images/catalog1.png" alt="">
-            </div>
-            <a class="rate" href="#">
-              <div class="rate-yo" data-rateyo-rating='4'></div>
-            </a>
-            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
-            <div class="catalog__inner-available">
-              <span></span>
-            </div>
-            <div class="catalog__inner-price">
-              <span>879 000 руб.</span>
-            </div>
-            <div class="catalog__inner-buttons">
-              <button class="catalog__inner-button">В корзину</button>
-              <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
-            </div>
-            <div class="catalog__inner-buy">
-              <a href="#">Купить в один клик</a>
-            </div>
-          </div>
-          <div class="catalog__inner-item">
-            <div class="catalog__inner-compare">
-              <img src="images/categories-chart.svg" alt="">
-              <p>Сравнить</p>
-            </div>
-            <div class="catalog__inner-img">
-              <img src="images/catalog1.png" alt="">
-            </div>
-            <a class="rate" href="#">
-              <div class="rate-yo" data-rateyo-rating='4'></div>
-            </a>
-            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
-            <div class="catalog__inner-available">
-              <span></span>
-            </div>
-            <div class="catalog__inner-price">
-              <span>879 000 руб.</span>
-            </div>
-            <div class="catalog__inner-buttons">
-              <button class="catalog__inner-button">В корзину</button>
-              <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
-            </div>
-            <div class="catalog__inner-buy">
-              <a href="#">Купить в один клик</a>
+            <div class="catalog-box-btn">
+              <div class="catalog__inner-buttons">
+                <div class="catalog__inner-compare-icon">
+                  <img src="images/categories-chart.svg" alt="">
+                  <p>Сравнить</p>
+                </div>
+                <div class="catalog__inner-like-icon">
+                  <img src="images/like.svg" alt="">
+                  <p>В избранное</p>
+                </div>
+                <button class="catalog__inner-button">В корзину</button>
+                <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
+                <a href="#" class="buy-click">Купить в один клик</a>
+              </div>
+              <div class="catalog__inner-buy">
+                <a href="#">Купить в один клик</a>
+              </div>
             </div>
           </div>
           <div class="catalog__inner-item">
-            <div class="catalog__inner-compare">
-              <img src="images/categories-chart.svg" alt="">
-              <p>Сравнить</p>
+            <div class="catalog-box-img">
+              <div class="catalog__inner-compare">
+                <img src="images/categories-chart.svg" alt="">
+                <p>Сравнить</p>
+              </div>
+              <div class="catalog__inner-img">
+                <img src="images/catalog1.png" alt="">
+              </div>
+              <a class="rate" href="#">
+                <div class="rate-yo" data-rateyo-rating='4'></div>
+              </a>
             </div>
-            <div class="catalog__inner-img">
-              <img src="images/catalog1.png" alt="">
+            <div class="catalog-box-descr">
+              <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+              <div class="catalog__inner-available">
+                <span></span>
+              </div>
+              <div class="catalog__inner-price">
+                <span>879 000 руб.</span>
+              </div>
+              <div class="catalog__inner-descr">
+                <ul class="catalog__inner-descr-list">
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Производство</p>
+                    <p class="descr-right">Pulsar</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Дистанция обнаружения человека</p>
+                    <p class="descr-right">1350 м</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Разрешение матрицы</p>
+                    <p class="descr-right">384x288 px</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Питание</p>
+                    <p class="descr-right">IPS5, IPS10</p>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <a class="rate" href="#">
-              <div class="rate-yo" data-rateyo-rating='4'></div>
-            </a>
-            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
-            <div class="catalog__inner-available">
-              <span></span>
-            </div>
-            <div class="catalog__inner-price">
-              <span>879 000 руб.</span>
-            </div>
-            <div class="catalog__inner-buttons">
-              <button class="catalog__inner-button">В корзину</button>
-              <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
-            </div>
-            <div class="catalog__inner-buy">
-              <a href="#">Купить в один клик</a>
-            </div>
-          </div>
-          <div class="catalog__inner-item">
-            <div class="catalog__inner-compare">
-              <img src="images/categories-chart.svg" alt="">
-              <p>Сравнить</p>
-            </div>
-            <div class="catalog__inner-img">
-              <img src="images/catalog1.png" alt="">
-            </div>
-            <a class="rate" href="#">
-              <div class="rate-yo" data-rateyo-rating='4'></div>
-            </a>
-            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
-            <div class="catalog__inner-available">
-              <span></span>
-            </div>
-            <div class="catalog__inner-price">
-              <span>879 000 руб.</span>
-            </div>
-            <div class="catalog__inner-buttons">
-              <button class="catalog__inner-button">В корзину</button>
-              <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
-            </div>
-            <div class="catalog__inner-buy">
-              <a href="#">Купить в один клик</a>
-            </div>
-          </div>
-          <div class="catalog__inner-item">
-            <div class="catalog__inner-compare">
-              <img src="images/categories-chart.svg" alt="">
-              <p>Сравнить</p>
-            </div>
-            <div class="catalog__inner-img">
-              <img src="images/catalog1.png" alt="">
-            </div>
-            <a class="rate" href="#">
-              <div class="rate-yo" data-rateyo-rating='4'></div>
-            </a>
-            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
-            <div class="catalog__inner-available">
-              <span></span>
-            </div>
-            <div class="catalog__inner-price">
-              <span>879 000 руб.</span>
-            </div>
-            <div class="catalog__inner-buttons">
-              <button class="catalog__inner-button">В корзину</button>
-              <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
-            </div>
-            <div class="catalog__inner-buy">
-              <a href="#">Купить в один клик</a>
+            <div class="catalog-box-btn">
+              <div class="catalog__inner-buttons">
+                <div class="catalog__inner-compare-icon">
+                  <img src="images/categories-chart.svg" alt="">
+                  <p>Сравнить</p>
+                </div>
+                <div class="catalog__inner-like-icon">
+                  <img src="images/like.svg" alt="">
+                  <p>В избранное</p>
+                </div>
+                <button class="catalog__inner-button">В корзину</button>
+                <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
+                <a href="#" class="buy-click">Купить в один клик</a>
+              </div>
+              <div class="catalog__inner-buy">
+                <a href="#">Купить в один клик</a>
+              </div>
             </div>
           </div>
           <div class="catalog__inner-item">
-            <div class="catalog__inner-compare">
-              <img src="images/categories-chart.svg" alt="">
-              <p>Сравнить</p>
+            <div class="catalog-box-img">
+              <div class="catalog__inner-compare">
+                <img src="images/categories-chart.svg" alt="">
+                <p>Сравнить</p>
+              </div>
+              <div class="catalog__inner-img">
+                <img src="images/catalog1.png" alt="">
+              </div>
+              <a class="rate" href="#">
+                <div class="rate-yo" data-rateyo-rating='4'></div>
+              </a>
             </div>
-            <div class="catalog__inner-img">
-              <img src="images/catalog1.png" alt="">
+            <div class="catalog-box-descr">
+              <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+              <div class="catalog__inner-available">
+                <span></span>
+              </div>
+              <div class="catalog__inner-price">
+                <span>879 000 руб.</span>
+              </div>
+              <div class="catalog__inner-descr">
+                <ul class="catalog__inner-descr-list">
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Производство</p>
+                    <p class="descr-right">Pulsar</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Дистанция обнаружения человека</p>
+                    <p class="descr-right">1350 м</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Разрешение матрицы</p>
+                    <p class="descr-right">384x288 px</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Питание</p>
+                    <p class="descr-right">IPS5, IPS10</p>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <a class="rate" href="#">
-              <div class="rate-yo" data-rateyo-rating='4'></div>
-            </a>
-            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
-            <div class="catalog__inner-available">
-              <span></span>
-            </div>
-            <div class="catalog__inner-price">
-              <span>879 000 руб.</span>
-            </div>
-            <div class="catalog__inner-buttons">
-              <button class="catalog__inner-button">В корзину</button>
-              <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
-            </div>
-            <div class="catalog__inner-buy">
-              <a href="#">Купить в один клик</a>
+            <div class="catalog-box-btn">
+              <div class="catalog__inner-buttons">
+                <div class="catalog__inner-compare-icon">
+                  <img src="images/categories-chart.svg" alt="">
+                  <p>Сравнить</p>
+                </div>
+                <div class="catalog__inner-like-icon">
+                  <img src="images/like.svg" alt="">
+                  <p>В избранное</p>
+                </div>
+                <button class="catalog__inner-button">В корзину</button>
+                <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
+                <a href="#" class="buy-click">Купить в один клик</a>
+              </div>
+              <div class="catalog__inner-buy">
+                <a href="#">Купить в один клик</a>
+              </div>
             </div>
           </div>
           <div class="catalog__inner-item">
-            <div class="catalog__inner-compare">
-              <img src="images/categories-chart.svg" alt="">
-              <p>Сравнить</p>
+            <div class="catalog-box-img">
+              <div class="catalog__inner-compare">
+                <img src="images/categories-chart.svg" alt="">
+                <p>Сравнить</p>
+              </div>
+              <div class="catalog__inner-img">
+                <img src="images/catalog1.png" alt="">
+              </div>
+              <a class="rate" href="#">
+                <div class="rate-yo" data-rateyo-rating='4'></div>
+              </a>
             </div>
-            <div class="catalog__inner-img">
-              <img src="images/catalog1.png" alt="">
+            <div class="catalog-box-descr">
+              <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+              <div class="catalog__inner-available">
+                <span></span>
+              </div>
+              <div class="catalog__inner-price">
+                <span>879 000 руб.</span>
+              </div>
+              <div class="catalog__inner-descr">
+                <ul class="catalog__inner-descr-list">
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Производство</p>
+                    <p class="descr-right">Pulsar</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Дистанция обнаружения человека</p>
+                    <p class="descr-right">1350 м</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Разрешение матрицы</p>
+                    <p class="descr-right">384x288 px</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Питание</p>
+                    <p class="descr-right">IPS5, IPS10</p>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <a class="rate" href="#">
-              <div class="rate-yo" data-rateyo-rating='4'></div>
-            </a>
-            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
-            <div class="catalog__inner-available">
-              <span></span>
-            </div>
-            <div class="catalog__inner-price">
-              <span>879 000 руб.</span>
-            </div>
-            <div class="catalog__inner-buttons">
-              <button class="catalog__inner-button">В корзину</button>
-              <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
-            </div>
-            <div class="catalog__inner-buy">
-              <a href="#">Купить в один клик</a>
+            <div class="catalog-box-btn">
+              <div class="catalog__inner-buttons">
+                <div class="catalog__inner-compare-icon">
+                  <img src="images/categories-chart.svg" alt="">
+                  <p>Сравнить</p>
+                </div>
+                <div class="catalog__inner-like-icon">
+                  <img src="images/like.svg" alt="">
+                  <p>В избранное</p>
+                </div>
+                <button class="catalog__inner-button">В корзину</button>
+                <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
+                <a href="#" class="buy-click">Купить в один клик</a>
+              </div>
+              <div class="catalog__inner-buy">
+                <a href="#">Купить в один клик</a>
+              </div>
             </div>
           </div>
           <div class="catalog__inner-item">
-            <div class="catalog__inner-compare">
-              <img src="images/categories-chart.svg" alt="">
-              <p>Сравнить</p>
+            <div class="catalog-box-img">
+              <div class="catalog__inner-compare">
+                <img src="images/categories-chart.svg" alt="">
+                <p>Сравнить</p>
+              </div>
+              <div class="catalog__inner-img">
+                <img src="images/catalog1.png" alt="">
+              </div>
+              <a class="rate" href="#">
+                <div class="rate-yo" data-rateyo-rating='4'></div>
+              </a>
             </div>
-            <div class="catalog__inner-img">
-              <img src="images/catalog1.png" alt="">
+            <div class="catalog-box-descr">
+              <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+              <div class="catalog__inner-available">
+                <span></span>
+              </div>
+              <div class="catalog__inner-price">
+                <span>879 000 руб.</span>
+              </div>
+              <div class="catalog__inner-descr">
+                <ul class="catalog__inner-descr-list">
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Производство</p>
+                    <p class="descr-right">Pulsar</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Дистанция обнаружения человека</p>
+                    <p class="descr-right">1350 м</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Разрешение матрицы</p>
+                    <p class="descr-right">384x288 px</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Питание</p>
+                    <p class="descr-right">IPS5, IPS10</p>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <a class="rate" href="#">
-              <div class="rate-yo" data-rateyo-rating='4'></div>
-            </a>
-            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
-            <div class="catalog__inner-available">
-              <span></span>
-            </div>
-            <div class="catalog__inner-price">
-              <span>879 000 руб.</span>
-            </div>
-            <div class="catalog__inner-buttons">
-              <button class="catalog__inner-button">В корзину</button>
-              <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
-            </div>
-            <div class="catalog__inner-buy">
-              <a href="#">Купить в один клик</a>
+            <div class="catalog-box-btn">
+              <div class="catalog__inner-buttons">
+                <div class="catalog__inner-compare-icon">
+                  <img src="images/categories-chart.svg" alt="">
+                  <p>Сравнить</p>
+                </div>
+                <div class="catalog__inner-like-icon">
+                  <img src="images/like.svg" alt="">
+                  <p>В избранное</p>
+                </div>
+                <button class="catalog__inner-button">В корзину</button>
+                <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
+                <a href="#" class="buy-click">Купить в один клик</a>
+              </div>
+              <div class="catalog__inner-buy">
+                <a href="#">Купить в один клик</a>
+              </div>
             </div>
           </div>
+          <div class="catalog__inner-item">
+            <div class="catalog-box-img">
+              <div class="catalog__inner-compare">
+                <img src="images/categories-chart.svg" alt="">
+                <p>Сравнить</p>
+              </div>
+              <div class="catalog__inner-img">
+                <img src="images/catalog1.png" alt="">
+              </div>
+              <a class="rate" href="#">
+                <div class="rate-yo" data-rateyo-rating='4'></div>
+              </a>
+            </div>
+            <div class="catalog-box-descr">
+              <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+              <div class="catalog__inner-available">
+                <span></span>
+              </div>
+              <div class="catalog__inner-price">
+                <span>879 000 руб.</span>
+              </div>
+              <div class="catalog__inner-descr">
+                <ul class="catalog__inner-descr-list">
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Производство</p>
+                    <p class="descr-right">Pulsar</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Дистанция обнаружения человека</p>
+                    <p class="descr-right">1350 м</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Разрешение матрицы</p>
+                    <p class="descr-right">384x288 px</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Питание</p>
+                    <p class="descr-right">IPS5, IPS10</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-box-btn">
+              <div class="catalog__inner-buttons">
+                <div class="catalog__inner-compare-icon">
+                  <img src="images/categories-chart.svg" alt="">
+                  <p>Сравнить</p>
+                </div>
+                <div class="catalog__inner-like-icon">
+                  <img src="images/like.svg" alt="">
+                  <p>В избранное</p>
+                </div>
+                <button class="catalog__inner-button">В корзину</button>
+                <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
+                <a href="#" class="buy-click">Купить в один клик</a>
+              </div>
+              <div class="catalog__inner-buy">
+                <a href="#">Купить в один клик</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__inner-item">
+            <div class="catalog-box-img">
+              <div class="catalog__inner-compare">
+                <img src="images/categories-chart.svg" alt="">
+                <p>Сравнить</p>
+              </div>
+              <div class="catalog__inner-img">
+                <img src="images/catalog1.png" alt="">
+              </div>
+              <a class="rate" href="#">
+                <div class="rate-yo" data-rateyo-rating='4'></div>
+              </a>
+            </div>
+            <div class="catalog-box-descr">
+              <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+              <div class="catalog__inner-available">
+                <span></span>
+              </div>
+              <div class="catalog__inner-price">
+                <span>879 000 руб.</span>
+              </div>
+              <div class="catalog__inner-descr">
+                <ul class="catalog__inner-descr-list">
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Производство</p>
+                    <p class="descr-right">Pulsar</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Дистанция обнаружения человека</p>
+                    <p class="descr-right">1350 м</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Разрешение матрицы</p>
+                    <p class="descr-right">384x288 px</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Питание</p>
+                    <p class="descr-right">IPS5, IPS10</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-box-btn">
+              <div class="catalog__inner-buttons">
+                <div class="catalog__inner-compare-icon">
+                  <img src="images/categories-chart.svg" alt="">
+                  <p>Сравнить</p>
+                </div>
+                <div class="catalog__inner-like-icon">
+                  <img src="images/like.svg" alt="">
+                  <p>В избранное</p>
+                </div>
+                <button class="catalog__inner-button">В корзину</button>
+                <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
+                <a href="#" class="buy-click">Купить в один клик</a>
+              </div>
+              <div class="catalog__inner-buy">
+                <a href="#">Купить в один клик</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__inner-item">
+            <div class="catalog-box-img">
+              <div class="catalog__inner-compare">
+                <img src="images/categories-chart.svg" alt="">
+                <p>Сравнить</p>
+              </div>
+              <div class="catalog__inner-img">
+                <img src="images/catalog1.png" alt="">
+              </div>
+              <a class="rate" href="#">
+                <div class="rate-yo" data-rateyo-rating='4'></div>
+              </a>
+            </div>
+            <div class="catalog-box-descr">
+              <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+              <div class="catalog__inner-available">
+                <span></span>
+              </div>
+              <div class="catalog__inner-price">
+                <span>879 000 руб.</span>
+              </div>
+              <div class="catalog__inner-descr">
+                <ul class="catalog__inner-descr-list">
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Производство</p>
+                    <p class="descr-right">Pulsar</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Дистанция обнаружения человека</p>
+                    <p class="descr-right">1350 м</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Разрешение матрицы</p>
+                    <p class="descr-right">384x288 px</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Питание</p>
+                    <p class="descr-right">IPS5, IPS10</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-box-btn">
+              <div class="catalog__inner-buttons">
+                <div class="catalog__inner-compare-icon">
+                  <img src="images/categories-chart.svg" alt="">
+                  <p>Сравнить</p>
+                </div>
+                <div class="catalog__inner-like-icon">
+                  <img src="images/like.svg" alt="">
+                  <p>В избранное</p>
+                </div>
+                <button class="catalog__inner-button">В корзину</button>
+                <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
+                <a href="#" class="buy-click">Купить в один клик</a>
+              </div>
+              <div class="catalog__inner-buy">
+                <a href="#">Купить в один клик</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__inner-item">
+            <div class="catalog-box-img">
+              <div class="catalog__inner-compare">
+                <img src="images/categories-chart.svg" alt="">
+                <p>Сравнить</p>
+              </div>
+              <div class="catalog__inner-img">
+                <img src="images/catalog1.png" alt="">
+              </div>
+              <a class="rate" href="#">
+                <div class="rate-yo" data-rateyo-rating='4'></div>
+              </a>
+            </div>
+            <div class="catalog-box-descr">
+              <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+              <div class="catalog__inner-available">
+                <span></span>
+              </div>
+              <div class="catalog__inner-price">
+                <span>879 000 руб.</span>
+              </div>
+              <div class="catalog__inner-descr">
+                <ul class="catalog__inner-descr-list">
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Производство</p>
+                    <p class="descr-right">Pulsar</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Дистанция обнаружения человека</p>
+                    <p class="descr-right">1350 м</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Разрешение матрицы</p>
+                    <p class="descr-right">384x288 px</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Питание</p>
+                    <p class="descr-right">IPS5, IPS10</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-box-btn">
+              <div class="catalog__inner-buttons">
+                <div class="catalog__inner-compare-icon">
+                  <img src="images/categories-chart.svg" alt="">
+                  <p>Сравнить</p>
+                </div>
+                <div class="catalog__inner-like-icon">
+                  <img src="images/like.svg" alt="">
+                  <p>В избранное</p>
+                </div>
+                <button class="catalog__inner-button">В корзину</button>
+                <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
+                <a href="#" class="buy-click">Купить в один клик</a>
+              </div>
+              <div class="catalog__inner-buy">
+                <a href="#">Купить в один клик</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__inner-item">
+            <div class="catalog-box-img">
+              <div class="catalog__inner-compare">
+                <img src="images/categories-chart.svg" alt="">
+                <p>Сравнить</p>
+              </div>
+              <div class="catalog__inner-img">
+                <img src="images/catalog1.png" alt="">
+              </div>
+              <a class="rate" href="#">
+                <div class="rate-yo" data-rateyo-rating='4'></div>
+              </a>
+            </div>
+            <div class="catalog-box-descr">
+              <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+              <div class="catalog__inner-available">
+                <span></span>
+              </div>
+              <div class="catalog__inner-price">
+                <span>879 000 руб.</span>
+              </div>
+              <div class="catalog__inner-descr">
+                <ul class="catalog__inner-descr-list">
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Производство</p>
+                    <p class="descr-right">Pulsar</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Дистанция обнаружения человека</p>
+                    <p class="descr-right">1350 м</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Разрешение матрицы</p>
+                    <p class="descr-right">384x288 px</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Питание</p>
+                    <p class="descr-right">IPS5, IPS10</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-box-btn">
+              <div class="catalog__inner-buttons">
+                <div class="catalog__inner-compare-icon">
+                  <img src="images/categories-chart.svg" alt="">
+                  <p>Сравнить</p>
+                </div>
+                <div class="catalog__inner-like-icon">
+                  <img src="images/like.svg" alt="">
+                  <p>В избранное</p>
+                </div>
+                <button class="catalog__inner-button">В корзину</button>
+                <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
+                <a href="#" class="buy-click">Купить в один клик</a>
+              </div>
+              <div class="catalog__inner-buy">
+                <a href="#">Купить в один клик</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__inner-item">
+            <div class="catalog-box-img">
+              <div class="catalog__inner-compare">
+                <img src="images/categories-chart.svg" alt="">
+                <p>Сравнить</p>
+              </div>
+              <div class="catalog__inner-img">
+                <img src="images/catalog1.png" alt="">
+              </div>
+              <a class="rate" href="#">
+                <div class="rate-yo" data-rateyo-rating='4'></div>
+              </a>
+            </div>
+            <div class="catalog-box-descr">
+              <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+              <div class="catalog__inner-available">
+                <span></span>
+              </div>
+              <div class="catalog__inner-price">
+                <span>879 000 руб.</span>
+              </div>
+              <div class="catalog__inner-descr">
+                <ul class="catalog__inner-descr-list">
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Производство</p>
+                    <p class="descr-right">Pulsar</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Дистанция обнаружения человека</p>
+                    <p class="descr-right">1350 м</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Разрешение матрицы</p>
+                    <p class="descr-right">384x288 px</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Питание</p>
+                    <p class="descr-right">IPS5, IPS10</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-box-btn">
+              <div class="catalog__inner-buttons">
+                <div class="catalog__inner-compare-icon">
+                  <img src="images/categories-chart.svg" alt="">
+                  <p>Сравнить</p>
+                </div>
+                <div class="catalog__inner-like-icon">
+                  <img src="images/like.svg" alt="">
+                  <p>В избранное</p>
+                </div>
+                <button class="catalog__inner-button">В корзину</button>
+                <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
+                <a href="#" class="buy-click">Купить в один клик</a>
+              </div>
+              <div class="catalog__inner-buy">
+                <a href="#">Купить в один клик</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__inner-item">
+            <div class="catalog-box-img">
+              <div class="catalog__inner-compare">
+                <img src="images/categories-chart.svg" alt="">
+                <p>Сравнить</p>
+              </div>
+              <div class="catalog__inner-img">
+                <img src="images/catalog1.png" alt="">
+              </div>
+              <a class="rate" href="#">
+                <div class="rate-yo" data-rateyo-rating='4'></div>
+              </a>
+            </div>
+            <div class="catalog-box-descr">
+              <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+              <div class="catalog__inner-available">
+                <span></span>
+              </div>
+              <div class="catalog__inner-price">
+                <span>879 000 руб.</span>
+              </div>
+              <div class="catalog__inner-descr">
+                <ul class="catalog__inner-descr-list">
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Производство</p>
+                    <p class="descr-right">Pulsar</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Дистанция обнаружения человека</p>
+                    <p class="descr-right">1350 м</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Разрешение матрицы</p>
+                    <p class="descr-right">384x288 px</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Питание</p>
+                    <p class="descr-right">IPS5, IPS10</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-box-btn">
+              <div class="catalog__inner-buttons">
+                <div class="catalog__inner-compare-icon">
+                  <img src="images/categories-chart.svg" alt="">
+                  <p>Сравнить</p>
+                </div>
+                <div class="catalog__inner-like-icon">
+                  <img src="images/like.svg" alt="">
+                  <p>В избранное</p>
+                </div>
+                <button class="catalog__inner-button">В корзину</button>
+                <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
+                <a href="#" class="buy-click">Купить в один клик</a>
+              </div>
+              <div class="catalog__inner-buy">
+                <a href="#">Купить в один клик</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__inner-item">
+            <div class="catalog-box-img">
+              <div class="catalog__inner-compare">
+                <img src="images/categories-chart.svg" alt="">
+                <p>Сравнить</p>
+              </div>
+              <div class="catalog__inner-img">
+                <img src="images/catalog1.png" alt="">
+              </div>
+              <a class="rate" href="#">
+                <div class="rate-yo" data-rateyo-rating='4'></div>
+              </a>
+            </div>
+            <div class="catalog-box-descr">
+              <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+              <div class="catalog__inner-available">
+                <span></span>
+              </div>
+              <div class="catalog__inner-price">
+                <span>879 000 руб.</span>
+              </div>
+              <div class="catalog__inner-descr">
+                <ul class="catalog__inner-descr-list">
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Производство</p>
+                    <p class="descr-right">Pulsar</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Дистанция обнаружения человека</p>
+                    <p class="descr-right">1350 м</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Разрешение матрицы</p>
+                    <p class="descr-right">384x288 px</p>
+                  </li>
+                  <li class="catalog__inner-descr-item">
+                    <p class="descr-left">Питание</p>
+                    <p class="descr-right">IPS5, IPS10</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-box-btn">
+              <div class="catalog__inner-buttons">
+                <div class="catalog__inner-compare-icon">
+                  <img src="images/categories-chart.svg" alt="">
+                  <p>Сравнить</p>
+                </div>
+                <div class="catalog__inner-like-icon">
+                  <img src="images/like.svg" alt="">
+                  <p>В избранное</p>
+                </div>
+                <button class="catalog__inner-button">В корзину</button>
+                <button class="catalog__inner-like"><img src="images/catalog-like.svg" alt=""></button>
+                <a href="#" class="buy-click">Купить в один клик</a>
+              </div>
+              <div class="catalog__inner-buy">
+                <a href="#">Купить в один клик</a>
+              </div>
+            </div>
+          </div>
+
 
           <!-- Pagination -->
           <div class="pagination">

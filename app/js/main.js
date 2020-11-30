@@ -52,6 +52,19 @@ $(function () {
     });
 
 
+    $('.sort__btn-grid').on('click', function () {
+        $(this).addClass('sort__btn-active');
+        $('.sort__btn-list').removeClass('sort__btn-active');
+        $('.catalog__inner-item').removeClass('catalog__inner-item--list');
+    });
+
+    $('.sort__btn-list').on('click', function () {
+        $(this).addClass('sort__btn-active');
+        $('.sort__btn-grid').removeClass('sort__btn-active');
+        $('.catalog__inner-item').addClass('catalog__inner-item--list');
+    });
+
+
 });
 
 
