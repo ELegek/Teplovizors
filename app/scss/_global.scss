@@ -172,3 +172,43 @@ body {
 }
 
 // border-bottom: 1px solid rgba(1, 39, 79, 1);
+
+.compare-btn {
+    position: relative;
+    height: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+
+    &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: url(../images/categories-chart.svg);
+        width: 20px;
+        height: 20px;
+    }
+
+    &:after {
+        position: absolute;
+        left: 25px;
+        top: 2px;
+        content: 'Сравнить';
+
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 16px;
+        color: #333333;
+    }
+}
+
+.compare-btn.compare-btn--active {
+    &:before {
+        content: url(../images/categories-chart-active.svg);
+    }
+
+    &:after {
+        color: #FF7900;
+    }
+}

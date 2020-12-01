@@ -212,3 +212,35 @@ $(function () {
 $(function () {
     $('.filter-style').styler();
 });
+
+
+// Стилизуем кнопки каталога товаров
+
+$(function () {
+    // Кнопка сравнение в позиции list
+    $('.catalog__inner-compare-list').on('click', function () {
+        $(this).toggleClass('catalog__inner-compare-list--active');
+    });
+    // Кнопка добавить в избранное в позиции list
+    $('.catalog__inner-like-list').on('click', function () {
+        $(this).toggleClass('catalog__inner-like-list--active');
+    });
+});
+
+
+$(function () {
+    // Кнопка сравнение в позиции grid
+    $('.compare-btn').on('click', function () {
+        $(this).toggleClass('compare-btn--active');
+    });
+
+    // Кнопка добавить в корзину
+    $('.catalog__inner-button').on('click', function () {
+        $(this).toggleClass('catalog__inner-button--active');
+    });
+
+    // Кнопка добавления в избранное в позиции grid
+    $('.catalog__inner-like').on('click', function () {
+        $(this).toggleClass('catalog__inner-like--active');
+    });
+});
