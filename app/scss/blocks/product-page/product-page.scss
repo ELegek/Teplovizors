@@ -41,3 +41,21 @@
     color: #4d4c4c;
   }
 }
+
+.product-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-item {
+  width: 50%;
+}
+
+.product-sliderbig__item,
+.product-slidersmall__item {
+  text-align: center;
+
+  img {
+    display: inline-block;
+  }
+}

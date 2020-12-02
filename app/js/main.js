@@ -43,6 +43,25 @@ $(function () {
     });
 
 
+    $('.product-sliderbig').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.product-slidersmall',
+    });
+
+    $('.product-slidersmall').slick({
+        arrows: false,
+        dots: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.product-sliderbig',
+        focusOnSelect: true,
+    });
+
+
+
 
     // JQuery form styler
 
