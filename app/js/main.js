@@ -246,6 +246,17 @@ $(function () {
     });
 });
 
+$(function () {
+    // Кнопка сравнение в позиции list
+    $('.product-compare').on('click', function () {
+        $(this).toggleClass('product-compare--active');
+    });
+    // Кнопка добавить в избранное в позиции list
+    $('.product-like').on('click', function () {
+        $(this).toggleClass('product-like--active');
+    });
+});
+
 
 $(function () {
     // Кнопка сравнение в позиции grid
