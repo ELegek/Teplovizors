@@ -248,11 +248,15 @@
   border-radius: 5px;
 }
 
+.product-descr__list {
+  margin-bottom: 30px;
+}
+
 .product-descr__item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 12px;
-  border-bottom: 0.7px solid rgba(1, 39, 79, .15);
+
 
   font-weight: normal;
   font-size: 14px;
@@ -263,17 +267,113 @@
 
 .descr-item__left {
   display: inline-block;
-  padding: 0 5px;
+
   color: #828282;
-  background-color: #FFFFFF;
+
 }
 
 
 
 .descr-item__right {
-  padding: 0 5px;
+
   display: inline-block;
   width: 120px;
   color: #333333;
-  background-color: #FFFFFF;
+
+}
+
+.product-descr__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.descr-item__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.descr-item__link {
+  display: inline-block;
+  width: 120px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #024184;
+}
+
+.descr-item__delivery,
+.descr-item__pickup {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #828282;
+  padding-left: 26px;
+  position: relative;
+
+
+  span {
+    font-weight: 600;
+    color: #333333;
+  }
+}
+
+.descr-item__delivery {
+
+  &:before {
+    position: absolute;
+    content: url(../../../images/descr-item-icon1.svg);
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 3px;
+  }
+}
+
+.descr-item__pickup {
+
+  &:before {
+    position: absolute;
+    content: url(../../../images/descr-item-icon2.svg);
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 3px;
+  }
+}
+
+.product-sliderbig__logo {
+  text-align: left;
+}
+
+.product-slidersmall__item {
+  cursor: pointer;
+  width: 110px !important;
+  height: 110px;
+
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    z-index: -1;
+  }
+
+  &:hover {
+    border: 1px solid #01274F;
+    border-radius: 7px;
+  }
+
+
+}
+
+.product-slidersmall__item.active {
+  border: 1px solid #01274F;
+  border-radius: 7px;
 }

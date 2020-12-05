@@ -175,6 +175,9 @@ document.querySelectorAll('.select').forEach(select => { //Выбриаем вс
 
 })
 
+
+
+
 $(function () {
     // Форма обратной связи 
 
