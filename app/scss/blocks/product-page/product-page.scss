@@ -1,3 +1,7 @@
+.product-page {
+  margin-bottom: 30px;
+}
+
 .product-wrapper {
   padding: 40px 30px;
   background: #FFFFFF;
@@ -373,7 +377,15 @@
 
 }
 
-.product-slidersmall__item.active {
-  border: 1px solid #01274F;
-  border-radius: 7px;
+
+
+.product-slidersmall {
+  .slick-slide.slick-current .product-slidersmall__item {
+    border: 1px solid #01274F;
+    border-radius: 7px;
+  }
+
+  .slick-slide.slick-current:focus {
+    outline: none;
+  }
 }
