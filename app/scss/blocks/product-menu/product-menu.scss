@@ -1,8 +1,17 @@
-.product-menu {
+.product-descr {
   background-color: #fff;
-  box-shadow: 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
-  border-radius: 7px 7px 0px 0px;
+  border-radius: 7px;
+  overflow: hidden;
 }
+
+
+.product-menu {
+
+  box-shadow: 0px 12px 7px -3px rgba(34, 60, 80, 0.2);
+
+  margin-bottom: 30px;
+}
+
 
 .product-menu__list {
   padding: 16px 0;
