@@ -70,6 +70,8 @@ $(function () {
         $(this).next().slideToggle();
     });
 
+    // Кнопки переключения просмотра в каталоге товаров
+
 
     $('.sort__btn-grid').on('click', function () {
         $(this).addClass('sort__btn-active');
@@ -82,6 +84,8 @@ $(function () {
         $('.sort__btn-grid').removeClass('sort__btn-active');
         $('.catalog__inner-item').addClass('catalog__inner-item--list');
     });
+
+
 
 
 });
@@ -227,6 +231,18 @@ $(function () {
         spacing: "5px",
         normalFill: "#BDBDBD",
         starWidth: "13px"
+    });
+
+});
+
+$(function () {
+    // RateYo 
+
+    $('.rate-yo__review').rateYo({
+        ratedFill: "#FF7900",
+        spacing: "5px",
+        normalFill: "#BDBDBD",
+        starWidth: "18px"
     });
 
 });
