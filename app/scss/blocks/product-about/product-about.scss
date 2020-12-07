@@ -2,8 +2,10 @@
   display: flex;
   justify-content: space-between;
   padding: 0px 30px;
-
+  margin-bottom: 20px;
   background-color: #fff;
+
+  border-bottom: 1px solid rgba(1, 39, 79, 0.15);
 }
 
 .product-about-left {
@@ -14,7 +16,7 @@
   width: 29%;
 }
 
-.product-about__title {
+.product__title {
   font-weight: bold;
   font-size: 24px;
   line-height: 35px;
@@ -116,6 +118,12 @@
     content: '';
     background: linear-gradient(180deg, #FFD519 0%, #FF7900 100%);
     border-radius: 1px;
+  }
+}
+
+.product-about__right-video {
+  img {
+    width: 100%;
   }
 }
 
