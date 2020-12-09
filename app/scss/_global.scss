@@ -32,10 +32,14 @@ h6 {
 
 body {
     min-width: 320px;
-    overflow-x: hidden;
+
     position: relative;
     font-family: 'Montserrat', sans-serif;
 
+}
+
+.body.lock {
+    overflow: hidden;
 }
 
 .container {

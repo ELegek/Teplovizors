@@ -1702,22 +1702,36 @@
   <div id="popup" class="popup">
     <div class="popup__body">
       <div class="popup__content">
-        <a href="#" class="popup__close close-popup"><img src="images/close.svg" alt="close"></a>
-        <div class="popup__title">Мы свяжемся с Вами в ближайшее время</div>
-        <form class="popup__form">
-          <input type="text" name="username" value="" placeholder="Имя">
-          <input type="text" name="phone" value="" placeholder="Телефон">
-        </form>
-        <div class="popup__check-wrapper">
-          <div class="popup__check">
-            <input type="checkbox">
-            <p>Я согласен на обработку <span>персональных данных</span> и с условиями
-              <span>пользовательского
-                соглашения</span>
-            </p>
-          </div>
+        <div class="popup__title">Написать отзыв</div>
+        <div class="form-box">
+          <form class="popup__form">
+            <label>
+              <p class="form-title">Ваше имя<span>*</span></p>
+              <input type="text" name="username" value="" placeholder="Имя">
+            </label>
+            <label>
+              <p class="form-title">Город<span>*</span></p>
+              <input type="text" name="city" value="" placeholder="Город">
+            </label>
+            <label>
+              <p class="form-title">Ваш e-mail</p>
+              <input type="text" name="email" value="" placeholder="E-mail">
+            </label>
+            <p class="form-title">Оценка</p>
+            <div class="form-rate-box">
+              <a class="rate" href="#">
+                <div class="rate-yo-form" data-rateyo-rating='4'></div>
+              </a>
+            </div>
+            <label>
+              <p class="form-title">Отзыв<span>*</span></p>
+              <textarea name="review" placeholder="Напишите ваш отзыв"></textarea>
+            </label>
+          </form>
         </div>
-        <button class="btn__small">Отправить</button>
+        <div class="form-btn-box">
+          <button class="form-btn">Отправить</button>
+        </div>
       </div>
     </div>
   </div>

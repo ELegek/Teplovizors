@@ -179,6 +179,10 @@
 
 // Popap ===========================
 
+.lock {
+  overflow: hidden;
+}
+
 .popup {
   position: fixed;
   width: 100%;
@@ -214,10 +218,11 @@
 }
 
 .popup__content {
+  border-radius: 7px;
   background-color: #fff;
-  max-width: 500px;
-  padding: 50px 100px;
-  text-align: center;
+  width: 539px;
+  padding: 30px;
+
 
   position: relative;
   margin: 0 15px;
@@ -228,33 +233,76 @@
 }
 
 .popup__title {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  color: #1C5870;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
   text-align: center;
-  width: 300px;
+  letter-spacing: -0.01em;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-  margin: 0 auto 40px;
+.form-box {
+  border-top: 1px solid rgba(1, 39, 79, .15);
+  padding-top: 32px;
+}
+
+.popup__form {
+  label {
+    display: block;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+  }
+}
+
+.form-title {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #4F4F4F;
+  margin-bottom: 6px;
+
+  span {
+    color: red;
+  }
 }
 
 .popup__form {
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  input {
+    width: 100%;
+    height: 42px;
+    margin-bottom: 20px;
+    padding: 0 12px;
+    background: #FCFCFD;
+    border: 1px solid #E0E0E0;
+    border-radius: 3px;
 
 
-}
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+  }
 
-.popup__form input {
-  width: 100%;
-  height: 40px;
+  textarea {
+    width: 100%;
+    height: 230px;
+    resize: none;
+    margin-bottom: 20px;
+    padding: 12px 12px;
+    background: #FCFCFD;
+    border: 1px solid #E0E0E0;
+    border-radius: 3px;
 
-  margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+  }
 
-  border: 1px solid #E0E0E0;
-  padding: 0 10px;
 }
 
 .popup__form input:hover {
@@ -262,41 +310,42 @@
 }
 
 .popup__form input:focus {
+  outline: none;
+}
+
+.popup__form textarea:hover {
   border: 1px solid #828282;
 }
 
-.popup__check-wrapper {
-  margin-bottom: 25px;
+.popup__form textarea:focus {
+  outline: none;
 }
 
-.popup__check {
-  display: flex;
-  justify-content: space-between;
+.form-btn-box {
+  text-align: center;
 }
 
-.popup__check input {
-  margin-right: 15px;
-}
-
-.popup__check p {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #BDBDBD;
-  text-align: left;
-}
-
-.popup__check span {
-  color: #1C5870;
-}
-
-.popup__close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-
-  border: none;
-  background-color: transparent;
+.form-btn {
+  background: #219653;
+  border-radius: 5px;
   cursor: pointer;
   outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 14px 20px;
+  letter-spacing: 0.35px;
+  color: #F2F2F2;
+}
+
+.form-rate-box {
+  background: #FCFCFD;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+  .rate {
+    margin: 8px;
+  }
 }

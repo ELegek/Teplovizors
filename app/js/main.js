@@ -342,13 +342,25 @@ $(function () {
 });
 
 $(function () {
-    // RateYo 
+    // RateYo__review
 
     $('.rate-yo__review').rateYo({
         ratedFill: "#FF7900",
         spacing: "5px",
         normalFill: "#BDBDBD",
         starWidth: "18px"
+    });
+
+});
+
+$(function () {
+    // RateYo__form
+
+    $('.rate-yo-form').rateYo({
+        ratedFill: "#FF7900",
+        spacing: "75px",
+        normalFill: "#BDBDBD",
+        starWidth: "30px"
     });
 
 });
