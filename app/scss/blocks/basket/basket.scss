@@ -131,6 +131,18 @@
 }
 
 
+.basket__menu-link.complete {
+  font-weight: normal;
+  color: #219653;
+
+  &:before {
+    content: url(../../../images/basket-check.svg);
+    width: 24px;
+    height: 24px;
+    border: 1px solid #219653;
+  }
+}
+
 // basket__product-box ==============================
 
 .basket__product-box {
