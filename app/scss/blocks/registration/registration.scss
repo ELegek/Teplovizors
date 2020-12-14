@@ -21,8 +21,33 @@
 
   label {
     width: 32%;
+
   }
 
+
+
+}
+
+.registration__feedback-form {
+  label {
+    width: 100%;
+  }
+
+  textarea {
+    width: 50%;
+    height: 100px;
+    resize: none;
+    background: #FCFCFD;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    padding: 12px;
+    outline: none;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #BDBDBD;
+
+  }
 }
 
 .registration__text {
@@ -37,7 +62,7 @@
 .registration__delivery {
   display: flex;
   justify-content: space-between;
-
+  margin-bottom: 50px;
 }
 
 .registration__delivery-wrap {
@@ -51,22 +76,134 @@
   width: 48%;
 
   display: flex;
-
+  align-items: center;
 }
 
 .registration__delivery-item {
   width: 24%;
   text-align: center;
-  width: 100px;
 }
 
 .registration__delivery-img {
-  width: 100%;
+  width: 100px;
+  margin: 0 auto;
   height: 80px;
   border: 1px solid #F2F2F2;
   border-radius: 7px;
+  margin-bottom: 10px;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.registration__delivery-price {
+  border-left: 1px solid rgba(1, 39, 79, .15);
+}
+
+.registration__delivery-price__item {
+  margin-left: 30px;
+}
+
+.registration__delivery-text {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #4F4F4F;
+  margin-bottom: 5px;
+
+  span {
+    font-weight: 600;
+
+  }
+}
+
+.registration__delivery-wrap__price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.registration__box {
+  margin-bottom: 50px;
+}
+
+.registration__feedback {
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(1, 39, 79, .15);
+}
+
+.registration__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+
+.registration__footer-list {
+
+  width: 63%;
+}
+
+.registration__footer-item {
+  display: flex;
+  justify-content: space-between;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #333333;
+
+  margin-bottom: 20px;
+
+  span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 20px;
+    letter-spacing: -0.01em;
+    color: #219653;
+  }
+}
+
+
+
+.registration__footer-text,
+.registration__footer-price {
+  width: 50%;
+}
+
+.registration__footer-btn {
+  width: 37%;
+  text-align: center;
+
+  .authorization-btn {
+    margin-bottom: 22px;
+  }
+}
+
+.registration__footer-price {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #333333;
+}
+
+.registration__footer-agreement {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 18px;
+  text-align: right;
+  letter-spacing: -0.01em;
+  color: #828282;
+
+  text-align: center;
+
+  a {
+    color: #01274F;
+  }
 }
