@@ -1,0 +1,35 @@
+.favorite-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .catalog__inner-item {
+    width: 30%;
+  }
+}
+
+.favorite-btn-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.favorite-btn {
+  position: relative;
+  height: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+
+  &:before {
+    position: absolute;
+    left: -15px;
+    top: 0;
+    content: url(../images/basket-btn.png);
+    width: 20px;
+    height: 20px;
+  }
+
+
+}

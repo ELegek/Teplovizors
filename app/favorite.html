@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Teplovizors</title>
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/77e8183332.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__inner-top">
+
+          <div class="select">
+            <input class="select__input" type="hidden" name="city">
+            <div class="select__curent-wrap">
+              <button class="select__current">г. Москва</button>
+              <i class="arrow-select fas fa-angle-down"></i>
+            </div>
+            <div class="select__list">
+              <button class="select__item" data-value="one">г. Краснодар</button>
+              <button class="select__item" data-value="two">г. Санкт-Петербург</button>
+              <button class="select__item" data-value="three">г. Казань</button>
+              <button class="select__item" data-value="four">г. Калининград</button>
+              <button class="select__item" data-value="five">г. Сочи</button>
+              <button class="select__item" data-value="five">г. Москва</button>
+            </div>
+          </div>
+
+
+          <div class="header__menu">
+            <ul class="menu__list">
+              <li class="menu__list-link"><a href="#">Контакты</a></li>
+              <li class="menu__list-link"><a href="#">Доставка и оплата</a></li>
+              <li class="menu__list-link"><a href="#">Обмен и возврат</a></li>
+              <li class="menu__list-link"><a href="#">Скидки</a></li>
+              <li class="menu__list-link"><a href="#">Новости</a></li>
+            </ul>
+          </div>
+          <div class="header__info">
+            <a class="header__phone" href="tel:84993905055">8 (499) 390-50-55</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__inner-bottom">
+          <div class="header__menu-bottom">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li>
+                  <a class="menu__link" href="#">Тепловизоры</a>
+                  <ul class="sub-menu__list">
+                    <div class="container">
+                      <div class="sub-menu__list-wrapper">
+                        <li class="sub-menu__list-item__wrapper">
+                          <div class="sub-menu__img">
+                            <img src="images/sub-menu-icon1.png" alt="">
+                          </div>
+                          <span class="sub-menu__list-title">Бинокли</span>
+                          <ul class="sub-menu__list-item">
+                            <li>
+                              <a href="#" class="sub-menu__link-item">ATN</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Dedal</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Fortuna</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Pulsar</a>
+                            </li>
+                          </ul>
+                          <a href="#" class="sub-menu__link-btn">Смотреть все</a>
+                        </li>
+                        <li class="sub-menu__list-item__wrapper">
+                          <div class="sub-menu__img">
+                            <img src="images/sub-menu-icon2.png" alt="">
+                          </div>
+                          <span class="sub-menu__list-title">Диагностические</span>
+                          <ul class="sub-menu__list-item">
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Экспертные</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Профессиональные</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Промышленные</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Пирометры</a>
+                            </li>
+                          </ul>
+                          <a href="#" class="sub-menu__link-btn">Смотреть все</a>
+                        </li>
+                        <li class="sub-menu__list-item__wrapper">
+                          <div class="sub-menu__img">
+                            <img src="images/sub-menu-icon3.png" alt="">
+                          </div>
+                          <span class="sub-menu__list-title">Для смартфона</span>
+                          <ul class="sub-menu__list-item">
+                            <li>
+                              <a href="#" class="sub-menu__link-item">ATN</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Dedal</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Fortuna</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Pulsar</a>
+                            </li>
+                          </ul>
+                          <a href="#" class="sub-menu__link-btn">Смотреть все</a>
+                        </li>
+                        <li class="sub-menu__list-item__wrapper">
+                          <div class="sub-menu__img">
+                            <img src="images/sub-menu-icon4.png" alt="">
+                          </div>
+                          <span class="sub-menu__list-title">Монокуляры</span>
+                          <ul class="sub-menu__list-item">
+                            <li>
+                              <a href="#" class="sub-menu__link-item">ATN</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Dedal</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Fortuna</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Pulsar</a>
+                            </li>
+                          </ul>
+                          <a href="#" class="sub-menu__link-btn">Смотреть все</a>
+                        </li>
+                        <li class="sub-menu__list-item__wrapper">
+                          <div class="sub-menu__img">
+                            <img src="images/sub-menu-icon5.png" alt="">
+                          </div>
+                          <span class="sub-menu__list-title">Насадки</span>
+                          <ul class="sub-menu__list-item">
+                            <li>
+                              <a href="#" class="sub-menu__link-item">ATN</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Dedal</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Fortuna</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Pulsar</a>
+                            </li>
+                          </ul>
+                          <a href="#" class="sub-menu__link-btn">Смотреть все</a>
+                        </li>
+                        <li class="sub-menu__list-item__wrapper">
+                          <div class="sub-menu__img">
+                            <img src="images/sub-menu-icon6.png" alt="">
+                          </div>
+                          <span class="sub-menu__list-title">Прицелы</span>
+                          <ul class="sub-menu__list-item">
+                            <li>
+                              <a href="#" class="sub-menu__link-item">ATN</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Dedal</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Fortuna</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Pulsar</a>
+                            </li>
+                          </ul>
+                          <a href="#" class="sub-menu__link-btn">Смотреть все</a>
+                        </li>
+                        <li class="sub-menu__list-item__wrapper">
+                          <div class="sub-menu__img">
+                            <img src="images/sub-menu-icon7.png" alt="">
+                          </div>
+                          <span class="sub-menu__list-title">Аксессуары</span>
+                          <ul class="sub-menu__list-item">
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Бинокли Bresser</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Бинокли Burris</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Бинокли Bushnell</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Бинокли Carl Zeiss</a>
+                            </li>
+                          </ul>
+                          <a href="#" class="sub-menu__link-btn">Смотреть все</a>
+                        </li>
+                        <li class="sub-menu__list-item__wrapper">
+                          <div class="sub-menu__img">
+                            <img src="images/sub-menu-icon8.png" alt="">
+                          </div>
+
+                          <span class="sub-menu__list-title">Прицелы ночного видения</span>
+                          <ul class="sub-menu__list-item">
+                            <li>
+                              <a href="#" class="sub-menu__link-item">ATN</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Dedal</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Fortuna</a>
+                            </li>
+                            <li>
+                              <a href="#" class="sub-menu__link-item">Pulsar</a>
+                            </li>
+                          </ul>
+                          <a href="#" class="sub-menu__link-btn">Смотреть все</a>
+                        </li>
+                        <div class="sub-menu__banner">
+                          <img src="images/banner.jpg" alt="">
+                        </div>
+
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li>
+                  <a class="menu__link" href="#">Бренды</a>
+                  <ul class="sub-menu__list">
+                    <div class="container">
+                      <div class="sub-menu__brands-wrapper">
+                        <li class="sub-menu__brands-item__wrapper">
+                          <a href="#" class="sub-menu__logo">
+                            <img src="images/sub-menu__logo1.png" alt="">
+                          </a>
+                          <p class="sub-menu__name">Pulsar</p>
+                        </li>
+                        <li class="sub-menu__brands-item__wrapper">
+                          <a href="#" class="sub-menu__logo">
+                            <img src="images/sub-menu__logo2.png" alt="">
+                          </a>
+                          <p class="sub-menu__name">Flir</p>
+                        </li>
+                        <li class="sub-menu__brands-item__wrapper">
+                          <a href="#" class="sub-menu__logo">
+                            <img src="images/sub-menu__logo3.png" alt="">
+                          </a>
+                          <p class="sub-menu__name">Atn</p>
+                        </li>
+                        <li class="sub-menu__brands-item__wrapper">
+                          <a href="#" class="sub-menu__logo">
+                            <img src="images/sub-menu__logo4.png" alt="">
+                          </a>
+                          <p class="sub-menu__name">Fluke</p>
+                        </li>
+                        <li class="sub-menu__brands-item__wrapper">
+                          <a href="#" class="sub-menu__logo">
+                            <img src="images/sub-menu__logo5.png" alt="">
+                          </a>
+                          <p class="sub-menu__name">Testo</p>
+                        </li>
+                        <li class="sub-menu__brands-item__wrapper">
+                          <a href="#" class="sub-menu__logo">
+                            <img src="images/sub-menu__logo6.png" alt="">
+                          </a>
+                          <p class="sub-menu__name">Guide</p>
+                        </li>
+                        <li class="sub-menu__brands-item__wrapper">
+                          <a href="#" class="sub-menu__logo">
+                            <img src="images/sub-menu__logo7.png" alt="">
+                          </a>
+                          <p class="sub-menu__name">iRay</p>
+                        </li>
+                        <li class="sub-menu__brands-item__wrapper">
+                          <a href="#" class="sub-menu__logo">
+                            <img src="images/sub-menu__logo8.png" alt="">
+                          </a>
+                          <p class="sub-menu__name">Dedal NV</p>
+                        </li>
+                        <li class="sub-menu__brands-item__wrapper">
+                          <a href="#" class="sub-menu__logo">
+                            <img src="images/sub-menu__logo9.png" alt="">
+                          </a>
+                          <p class="sub-menu__name">Seek Thermal</p>
+                        </li>
+                        <li class="sub-menu__brands-item__wrapper">
+                          <a href="#" class="sub-menu__logo">
+                            <img src="images/sub-menu__logo10.png" alt="">
+                          </a>
+                          <p class="sub-menu__name">Fortuna</p>
+                        </li>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <a href="#" class="header__logo">
+            <img src="images/logo.png" alt="logo">
+          </a>
+          <div class="header__bottom-box">
+            <ul class="user__list">
+              <li class="user__list-item"><a href="#" class="user__list-link"><img src="images/search-icon.svg"
+                    alt=""></a></li>
+              <li class="user__list-item"><a href="#" class="user__list-link"><img src="images/heart-icon.svg"
+                    alt=""></a></li>
+              <li class="user__list-item"><a href="#" class="user__list-link"><img src="images/chart-icon.svg"
+                    alt=""></a></li>
+              <li class="user__list-item"><a href="#" class="user__list-link"><img src="images/bag-icon.svg" alt=""></a>
+              </li>
+              <li class="user__list-item"><a href="#" class="user__list-link"><img src="images/user-icon.svg"
+                    alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="page">
+    <div class="container">
+
+      <section class="breadcrumbs">
+        <div class="breadcrumbs__inner">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#">Личный кабинет</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#">Избранное</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="guarantee">
+        <h2 class="guarantee-title title">Избранное</h2>
+        <div class="guarantee-wrapper">
+          <div class="sidebar">
+            <ul class="sidebar-list">
+              <li class="sidebar-list__item">
+                <a href="#" class="sidebar-link ">
+                  <div class="sidebar-link-img"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                        stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                        stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></div>
+                  <p class="sidebar-link-text">Мой профиль</p>
+                </a>
+              </li>
+              <li class="sidebar-list__item">
+                <a href="#" class="sidebar-link">
+                  <div class="sidebar-link-img"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 6H21" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M8 12H21" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M8 18H21" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M3 6H3.01" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M3 12H3.01" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M3 18H3.01" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg></div>
+                  <p class="sidebar-link-text">Мои заказы</p>
+                </a>
+              </li>
+              <li class="sidebar-list__item">
+                <a href="#" class="sidebar-link active">
+                  <div class="sidebar-link-img"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M20.8401 4.60987C20.3294 4.09888 19.7229 3.69352 19.0555 3.41696C18.388 3.14039 17.6726 2.99805 16.9501 2.99805C16.2276 2.99805 15.5122 3.14039 14.8448 3.41696C14.1773 3.69352 13.5709 4.09888 13.0601 4.60987L12.0001 5.66987L10.9401 4.60987C9.90843 3.57818 8.50915 2.99858 7.05012 2.99858C5.59109 2.99858 4.19181 3.57818 3.16012 4.60987C2.12843 5.64156 1.54883 7.04084 1.54883 8.49987C1.54883 9.95891 2.12843 11.3582 3.16012 12.3899L4.22012 13.4499L12.0001 21.2299L19.7801 13.4499L20.8401 12.3899C21.3511 11.8791 21.7565 11.2727 22.033 10.6052C22.3096 9.93777 22.4519 9.22236 22.4519 8.49987C22.4519 7.77738 22.3096 7.06198 22.033 6.39452C21.7565 5.72706 21.3511 5.12063 20.8401 4.60987V4.60987Z"
+                        stroke="#01274F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></div>
+                  <p class="sidebar-link-text">Избранное</p>
+                </a>
+              </li>
+              <li class="sidebar-list__item">
+                <a href="#" class="sidebar-link">
+                  <div class="sidebar-link-img"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9"
+                        stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M16 17L21 12L16 7" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M21 12H9" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg></div>
+                  <p class="sidebar-link-text">Выход</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main">
+            <div class="favorite-wrapper">
+              <div class="catalog__inner-item">
+                <div class="catalog-box-img">
+                  <div class="favorite-btn-box">
+                    <button class="compare-btn"></button>
+                    <button class="favorite-btn"></button>
+                  </div>
+                  <div class="catalog__inner-img">
+                    <img src="images/catalog3.png" alt="">
+                  </div>
+                  <a class="rate" href="#">
+                    <div class="rate-yo" data-rateyo-rating='4'></div>
+                  </a>
+                </div>
+                <div class="catalog-box-descr">
+                  <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+                  <div class="catalog__inner-available">
+                    <span></span>
+                  </div>
+                  <div class="catalog__inner-price">
+                    <span>879 000 руб.</span>
+                  </div>
+                  <div class="catalog__inner-descr">
+                    <ul class="catalog__inner-descr-list">
+                      <li class="catalog__inner-descr-item">
+                        <p class="descr-left">Производство</p>
+                        <p class="descr-right">Pulsar</p>
+                      </li>
+                      <li class="catalog__inner-descr-item">
+                        <p class="descr-left">Дистанция обнаружения человека</p>
+                        <p class="descr-right">1350 м</p>
+                      </li>
+                      <li class="catalog__inner-descr-item">
+                        <p class="descr-left">Разрешение матрицы</p>
+                        <p class="descr-right">384x288 px</p>
+                      </li>
+                      <li class="catalog__inner-descr-item">
+                        <p class="descr-left">Питание</p>
+                        <p class="descr-right">IPS5, IPS10</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="catalog-box-btn">
+                  <div class="catalog__inner-buttons">
+                    <button class="catalog__inner-compare-list"></button>
+                    <button class="catalog__inner-like-list"></button>
+                    <button class="catalog__inner-button"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__inner-item">
+                <div class="catalog-box-img">
+                  <div class="favorite-btn-box">
+                    <button class="compare-btn"></button>
+                    <button class="favorite-btn"></button>
+                  </div>
+                  <div class="catalog__inner-img">
+                    <img src="images/catalog3.png" alt="">
+                  </div>
+                  <a class="rate" href="#">
+                    <div class="rate-yo" data-rateyo-rating='4'></div>
+                  </a>
+                </div>
+                <div class="catalog-box-descr">
+                  <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+                  <div class="catalog__inner-available catalog__inner-order">
+                    <span></span>
+                  </div>
+                  <div class="catalog__inner-price">
+                    <span>879 000 руб.</span>
+                  </div>
+                  <div class="catalog__inner-descr">
+                    <ul class="catalog__inner-descr-list">
+                      <li class="catalog__inner-descr-item">
+                        <p class="descr-left">Производство</p>
+                        <p class="descr-right">Pulsar</p>
+                      </li>
+                      <li class="catalog__inner-descr-item">
+                        <p class="descr-left">Дистанция обнаружения человека</p>
+                        <p class="descr-right">1350 м</p>
+                      </li>
+                      <li class="catalog__inner-descr-item">
+                        <p class="descr-left">Разрешение матрицы</p>
+                        <p class="descr-right">384x288 px</p>
+                      </li>
+                      <li class="catalog__inner-descr-item">
+                        <p class="descr-left">Питание</p>
+                        <p class="descr-right">IPS5, IPS10</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="catalog-box-btn">
+                  <div class="catalog__inner-buttons">
+                    <button class="catalog__inner-compare-list"></button>
+                    <button class="catalog__inner-like-list"></button>
+                    <button class="catalog__inner-button"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__inner-item">
+                <div class="catalog-box-img">
+                  <div class="favorite-btn-box">
+                    <button class="compare-btn"></button>
+                    <button class="favorite-btn"></button>
+                  </div>
+                  <div class="catalog__inner-img">
+                    <img src="images/catalog3.png" alt="">
+                  </div>
+                  <a class="rate" href="#">
+                    <div class="rate-yo" data-rateyo-rating='4'></div>
+                  </a>
+                </div>
+                <div class="catalog-box-descr">
+                  <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+                  <div class="catalog__inner-available">
+                    <span></span>
+                  </div>
+                  <div class="catalog__inner-price">
+                    <span>879 000 руб.</span>
+                  </div>
+                  <div class="catalog__inner-descr">
+                    <ul class="catalog__inner-descr-list">
+                      <li class="catalog__inner-descr-item">
+                        <p class="descr-left">Производство</p>
+                        <p class="descr-right">Pulsar</p>
+                      </li>
+                      <li class="catalog__inner-descr-item">
+                        <p class="descr-left">Дистанция обнаружения человека</p>
+                        <p class="descr-right">1350 м</p>
+                      </li>
+                      <li class="catalog__inner-descr-item">
+                        <p class="descr-left">Разрешение матрицы</p>
+                        <p class="descr-right">384x288 px</p>
+                      </li>
+                      <li class="catalog__inner-descr-item">
+                        <p class="descr-left">Питание</p>
+                        <p class="descr-right">IPS5, IPS10</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="catalog-box-btn">
+                  <div class="catalog__inner-buttons">
+                    <button class="catalog__inner-compare-list"></button>
+                    <button class="catalog__inner-like-list"></button>
+                    <button class="catalog__inner-button"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__inner-item">
+                <div class="catalog-box-img">
+                  <div class="favorite-btn-box">
+                    <button class="compare-btn"></button>
+                    <button class="favorite-btn"></button>
+                  </div>
+                  <div class="catalog__inner-img">
+                    <img src="images/catalog3.png" alt="">
+                  </div>
+                  <a class="rate" href="#">
+                    <div class="rate-yo" data-rateyo-rating='4'></div>
+                  </a>
+                </div>
+                <div class="catalog-box-descr">
+                  <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+                  <div class="catalog__inner-available catalog__inner-stock">
+                    <span></span>
+                  </div>
+                  <div class="catalog__inner-price">
+                    <span>879 000 руб.</span>
+                  </div>
+                  <div class="catalog__inner-descr">
+                    <ul class="catalog__inner-descr-list">
+                      <li class="catalog__inner-descr-item">
+                        <p class="descr-left">Производство</p>
+                        <p class="descr-right">Pulsar</p>
+                      </li>
+                      <li class="catalog__inner-descr-item">
+                        <p class="descr-left">Дистанция обнаружения человека</p>
+                        <p class="descr-right">1350 м</p>
+                      </li>
+                      <li class="catalog__inner-descr-item">
+                        <p class="descr-left">Разрешение матрицы</p>
+                        <p class="descr-right">384x288 px</p>
+                      </li>
+                      <li class="catalog__inner-descr-item">
+                        <p class="descr-left">Питание</p>
+                        <p class="descr-right">IPS5, IPS10</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="catalog-box-btn">
+                  <div class="catalog__inner-buttons">
+                    <button class="catalog__inner-compare-list"></button>
+                    <button class="catalog__inner-like-list"></button>
+                    <button class="catalog__inner-button"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </section>
+
+      <section class="watched">
+        <h3 class="watched-title title">Вы недавно смотрели</h3>
+
+        <div class="watched-box">
+          <div class="watched-item">
+            <div class="catalog__inner-compare">
+              <img src="images/categories-chart.svg" alt="">
+              <p>Сравнить</p>
+            </div>
+            <div class="catalog__inner-img">
+              <img src="images/catalog1.png" alt="">
+            </div>
+            <a class="rate" href="#">
+              <div class="rate-yo" data-rateyo-rating='4'></div>
+            </a>
+            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+            <div class="catalog__inner-available">
+              <span></span>
+            </div>
+            <div class="catalog__inner-price">
+              <span>879 000 руб.</span>
+            </div>
+          </div>
+          <div class="watched-item">
+            <div class="catalog__inner-compare">
+              <img src="images/categories-chart.svg" alt="">
+              <p>Сравнить</p>
+            </div>
+            <div class="catalog__inner-img">
+              <img src="images/catalog1.png" alt="">
+            </div>
+            <a class="rate" href="#">
+              <div class="rate-yo" data-rateyo-rating='4'></div>
+            </a>
+            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+            <div class="catalog__inner-available">
+              <span></span>
+            </div>
+            <div class="catalog__inner-price">
+              <span>879 000 руб.</span>
+            </div>
+          </div>
+          <div class="watched-item">
+            <div class="catalog__inner-compare">
+              <img src="images/categories-chart.svg" alt="">
+              <p>Сравнить</p>
+            </div>
+            <div class="catalog__inner-img">
+              <img src="images/catalog1.png" alt="">
+            </div>
+            <a class="rate" href="#">
+              <div class="rate-yo" data-rateyo-rating='4'></div>
+            </a>
+            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+            <div class="catalog__inner-available">
+              <span></span>
+            </div>
+            <div class="catalog__inner-price">
+              <span>879 000 руб.</span>
+            </div>
+          </div>
+          <div class="watched-item">
+            <div class="catalog__inner-compare">
+              <img src="images/categories-chart.svg" alt="">
+              <p>Сравнить</p>
+            </div>
+            <div class="catalog__inner-img">
+              <img src="images/catalog1.png" alt="">
+            </div>
+            <a class="rate" href="#">
+              <div class="rate-yo" data-rateyo-rating='4'></div>
+            </a>
+            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+            <div class="catalog__inner-available">
+              <span></span>
+            </div>
+            <div class="catalog__inner-price">
+              <span>879 000 руб.</span>
+            </div>
+          </div>
+          <div class="watched-item">
+            <div class="catalog__inner-compare">
+              <img src="images/categories-chart.svg" alt="">
+              <p>Сравнить</p>
+            </div>
+            <div class="catalog__inner-img">
+              <img src="images/catalog1.png" alt="">
+            </div>
+            <a class="rate" href="#">
+              <div class="rate-yo" data-rateyo-rating='4'></div>
+            </a>
+            <h5 class="catalog__inner-text">Тепловизионный прицел Инфратех ИТ-315</h5>
+            <div class="catalog__inner-available">
+              <span></span>
+            </div>
+            <div class="catalog__inner-price">
+              <span>879 000 руб.</span>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+    </div>
+  </section>
+
+
+
+
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="container">
+        <div class="footer__wrapper-top">
+          <div class="footer__item">
+            <img src="images/footer__logo.png" class="footer__logo"></img>
+            <p class="footer-text">129343, Москва,<br> пр-д Серебрякова, <br>
+              д. 14 стр. 23</p>
+            <div class="footer__mail">teplovizorro@bk.ru</div>
+          </div>
+          <div class="footer__item-nav">
+            <nav class="footer__nav">
+              <div class="footer__nav-title">Компания</div>
+              <ul class="footer__list">
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Обмен и возврат</a></li>
+                <li><a href="#">Сравнение</a></li>
+              </ul>
+            </nav>
+            <nav class="footer__nav">
+              <div class="footer__nav-title">Продукция</div>
+              <ul class="footer__list">
+                <li><a href="#">Прицелы</a></li>
+                <li><a href="#">Бинокли</a></li>
+                <li><a href="#">Диагностические</a></li>
+                <li><a href="#">Для смартфона</a></li>
+                <li><a href="#">Монокуляры</a></li>
+                <li><a href="#">Насадки</a></li>
+                <li><a href="#">Аксессуары</a></li>
+              </ul>
+            </nav>
+            <nav class="footer__nav">
+              <div class="footer__nav-title">Бренды</div>
+              <ul class="footer__list">
+                <li><a href="#">ATN</a></li>
+                <li><a href="#">Dedal</a></li>
+                <li><a href="#">Flir</a></li>
+                <li><a href="#">Fluke</a></li>
+                <li><a href="#">Fortuna</a></li>
+                <li><a href="#">Guide</a></li>
+                <li><a href="#">iRay</a></li>
+                <li><a href="#">Pulsar</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__item">
+            <div class="footer__item-wrapper">
+              <div class="footer__item-text">Задать вопрос <br> или оформить покупку</div>
+              <a class="footer__item-phone" href="tel:84993905055">8 (499) 390-50-55</a>
+              <button class="footer-btn">Обратный звонок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__inner">
+      <div class="container">
+        <div class="footer__wrapper-midle">
+          <p class="footer__copy">© 2012-2020, «Точка-М»</p>
+          <p class="footer__agreement">Пользовательское соглашение</p>
+          <ul class="footer__icon">
+            <li class="footer__icon-link"><a href="#"><img src="images/Instagram.svg" alt=""></a></li>
+            <li class="footer__icon-link"><a href="#"><img src="images/Youtube.svg" alt=""></a></li>
+            <li class="footer__icon-link"><a href="#"><img src="images/VK.svg" alt=""></a></li>
+            <li class="footer__icon-link"><a href="#"><img src="images/Facebook.svg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__inner">
+      <div class="container">
+        <div class="footer__wrapper-bottom">
+          <p class="footer__bottom-text">Вся информация на сайте о товарах и ценах носит справочный характер и не
+            является публичной офертой в соответствии с пунктом 2 статьи 437 ГК РФ. Производитель оставляет за собой
+            право изменять характеристики товара, его внешний вид, комплектность и цену без предварительного уведомления
+            продавца. </p>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/jquery.rateyo.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
