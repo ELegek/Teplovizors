@@ -47,6 +47,9 @@
               <li class="menu__list-link"><a href="#">Новости</a></li>
             </ul>
           </div>
+          <div class="header__burger">
+            <span class="header__burger-btn"></span>
+          </div>
           <div class="header__info">
             <a class="header__phone" href="tel:84993905055">8 (499) 390-50-55</a>
           </div>
@@ -314,7 +317,10 @@
             </nav>
           </div>
           <a href="#" class="header__logo">
-            <img src="images/logo.png" alt="logo">
+            <picture class="logo__img">
+              <source srcset="images/logo-mobile.png" media="(max-width: 520px)">
+              <img src="images/logo.png" alt="logo">
+            </picture>
           </a>
           <div class="header__bottom-box">
             <ul class="user__list">
@@ -333,8 +339,12 @@
         </div>
       </div>
     </div>
-  </header>
 
+    <ul class="menu__mobile-list">
+
+    </ul>
+  </header>
+  <!--  
   <section class="slider__top">
     <div class="slider">
       <div class="slider__item">
@@ -1128,7 +1138,7 @@
 
 
   </footer>
-
+-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/jquery.rateyo.min.js"></script>
