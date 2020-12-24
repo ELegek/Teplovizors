@@ -4,7 +4,7 @@
 
 .about__wrapper {
     display: flex;
-
+    justify-content: space-between;
 }
 
 .about__item-left {
@@ -16,14 +16,28 @@
     margin-left: 30px;
 }
 
+
+
 .about__item {
-    padding: 241px 0 53px 40px;
+    position: relative;
     border-radius: 7px;
     overflow: hidden;
 }
 
 .about__content {
+    max-height: 300px;
     max-width: 343px;
+    position: absolute;
+    left: 25px;
+    right: 0;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .products__slider-link::after {
+        right: 110px;
+    }
 }
 
 .about__title {
