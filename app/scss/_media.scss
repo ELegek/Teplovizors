@@ -147,6 +147,11 @@
   .popular__img {
     margin: 0 auto;
   }
+
+  .slider-blog__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 @media (max-width: 930px) {
@@ -210,6 +215,10 @@
     margin-bottom: 20px;
   }
 
+  .slider-blog__item {
+    padding: 125px 25px;
+  }
+
 }
 
 @media (max-width: 520px) {
@@ -240,6 +249,16 @@
 
   .about__text {
     margin-bottom: 10px;
+  }
+
+  .slider-blog__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .slider-blog__text {
+    font-size: 12px;
+    margin-bottom: 20px;
   }
 }
 
