@@ -23,7 +23,7 @@
     display: block;
     padding: 20px;
 
-    width: 255px;
+    width: 25%;
     height: 255px;
 
     text-align: center;
@@ -37,13 +37,17 @@
         .popular__content {
             color: #fff;
         }
-        
+
     }
 }
 
 .popular__img {
     width: 214px;
     height: 141px;
+
+    img {
+        width: 100%;
+    }
 }
 
 .popular__content {
