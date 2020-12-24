@@ -11,6 +11,36 @@
 @media (max-width: 320px) {}
 
 
+@media (max-width: 1165px) {
+  .sub-menu__list {
+    .container {
+      width: 100% !important;
+    }
+  }
+
+  .sub-menu__brands-wrapper {
+    justify-content: center;
+  }
+
+  .sub-menu__brands-item__wrapper {
+    width: 17%;
+  }
+
+  .sub-menu__banner {
+    display: none;
+  }
+
+  .sub-menu__list-wrapper {
+    justify-content: center !important;
+
+    .sub-menu__list-item__wrapper {
+      width: 21% !important;
+    }
+  }
+
+
+}
+
 @media (max-width: 930px) {
   .header__menu {
     display: none;
