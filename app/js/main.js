@@ -21,6 +21,24 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 3000,
         infinite: true,
+        responsive: [{
+                breakpoint: 1070,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 730,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    autoplay: false,
+                }
+            },
+        ]
     });
 
     $('.slider-blog__wrapper').slick({

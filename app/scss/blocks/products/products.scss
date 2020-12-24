@@ -14,7 +14,7 @@
     margin: 0 15px;
 
     position: relative;
-    
+
     min-height: 408px;
 
     display: flex;
@@ -25,9 +25,13 @@
 .products__slider-img {
     position: absolute;
     top: -60px;
-    left: 54px;
+    left: 0;
     right: 0;
     z-index: 10;
+
+    img {
+        margin: 0 auto;
+    }
 }
 
 .products__slider-suptitle {
@@ -94,7 +98,8 @@
 
 
 
-.products__slider, .categories-slider {
+.products__slider,
+.categories-slider {
     .slick-dots {
         display: flex;
         align-items: center;
@@ -103,6 +108,7 @@
         li {
             list-style: none;
             margin: 60px 5px 0px;
+
             &.slick-active button {
                 background-color: #01274F;
             }
