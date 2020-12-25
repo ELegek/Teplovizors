@@ -50,6 +50,8 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 3000,
         infinite: true,
+
+
     });
 
     $('.categories-slider').slick({
@@ -58,6 +60,31 @@ $(function () {
         centerMode: true,
         slidesToShow: 5,
         slidesToScroll: 1,
+        responsive: [{
+                breakpoint: 1550,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                }
+            },
+            {
+                breakpoint: 990,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                }
+            },
+            {
+                breakpoint: 670,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: false,
+                }
+            },
+        ]
     });
 
 

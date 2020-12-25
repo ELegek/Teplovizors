@@ -152,6 +152,21 @@
     font-size: 30px;
     line-height: 30px;
   }
+
+  .brands {
+    padding: 30px 0;
+  }
+
+  .questions {
+    padding: 0;
+    padding-bottom: 20px;
+  }
+
+  .questions__wrapper {
+    position: relative;
+    top: 0;
+    padding: 50px 20px;
+  }
 }
 
 @media (max-width: 930px) {
@@ -221,6 +236,36 @@
 
 }
 
+@media (max-width: 670px) {
+  .categories-triggers__item {
+    margin: 0 10px;
+    font-size: 20px;
+  }
+
+  .questions__title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .questions__text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .questions__form {
+    flex-wrap: wrap;
+
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      margin: 0 auto;
+    }
+  }
+}
+
 @media (max-width: 520px) {
 
   .title {
@@ -283,6 +328,24 @@
   }
 
   .products__slider-text {
+    font-size: 10px;
+  }
+
+  .categories-triggers__item {
+    margin: 0 5px;
+    font-size: 18px;
+  }
+
+  .questions__title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .questions__text {
+    font-size: 10px;
+  }
+
+  .questions__suptitle {
     font-size: 10px;
   }
 }
