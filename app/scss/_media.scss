@@ -80,8 +80,8 @@
     display: none;
   }
 
-  .header {
-    margin-bottom: 30px;
+  .products {
+    padding-top: 20px;
   }
 
   .services__wrapper {
@@ -213,6 +213,47 @@
   .footer__wrapper-midle {
     padding: 10px 0;
   }
+
+  .contacts__title {
+    text-align: center;
+  }
+
+  .contacts__wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contacts__item {
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .ab__company {
+    padding-top: 0;
+  }
+
+  .ab__company-wrap {
+    flex-direction: column;
+  }
+
+  .ab__company-content {
+    width: 100%;
+  }
+
+  .ab__company-title {
+    text-align: center;
+  }
+
+  .requisites {
+    padding-bottom: 0;
+  }
+
+  .page {
+    padding-bottom: 40px;
+  }
 }
 
 @media (max-width: 930px) {
@@ -235,12 +276,38 @@
   .menu__mobile-list {
     display: block;
   }
+
+  .advantages-title {
+    text-align: center;
+  }
+
+  .advantages-wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .advantages-item {
+    width: 45%;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .advantages-icon {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 790px) {
   .about__item {
     width: 100%;
   }
+
+  .breadcrumbs {
+    padding: 10px 0;
+  }
+
+
 }
 
 
@@ -359,6 +426,14 @@
       margin-bottom: 10px;
     }
   }
+
+  .advantages-title {
+    font-size: 30px;
+  }
+
+  .advantages-item {
+    width: 100%;
+  }
 }
 
 @media (max-width: 520px) {
@@ -400,10 +475,39 @@
     font-size: 12px;
     margin-bottom: 20px;
   }
+
+  .ab__company-text {
+    font-size: 10px;
+  }
+
+  .ab__company-brands {
+    flex-direction: column;
+  }
+
+  .ab__company-item {
+    font-size: 14px;
+  }
+
+  .ab__company-list+.ab__company-list {
+    margin: 0;
+  }
+
+  .contact_form {
+    min-width: 100%;
+  }
 }
 
 @media (max-width: 420px) {
   .title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .contacts__title {
+    margin-bottom: 15px;
+  }
+
+  .contacts__subtitle {
     font-size: 20px;
     line-height: 30px;
   }
@@ -442,5 +546,9 @@
 
   .questions__suptitle {
     font-size: 10px;
+  }
+
+  .contact_form-title {
+    font-size: 20px;
   }
 }
