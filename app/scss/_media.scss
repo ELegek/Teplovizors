@@ -254,6 +254,22 @@
   .page {
     padding-bottom: 40px;
   }
+
+  .news-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .news-item {
+    grid-column: 1 / 3;
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
+
+  .news {
+    padding-bottom: 20px;
+  }
 }
 
 @media (max-width: 930px) {
