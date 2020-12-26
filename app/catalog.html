@@ -467,6 +467,80 @@
           <h4 class="catalog-quantity">(443)</h4>
           <a href="#" class="catalog-link__question">Как выбрать бинокль</a>
         </div>
+        <div class="mobile__sort">
+          <ul class="mobile__sort-list">
+            <li class="mobile__sort-item">
+              <button class="mobile__sort-btn teg">Теги</button>
+            </li>
+            <li class="mobile__sort-item">
+              <button class="mobile__sort-btn sorting">Сортировка</button>
+            </li>
+            <li class="mobile__sort-item">
+              <a href="#popup" class="reviews__btn popup-link">Добавить отзыв</a>
+            </li>
+            <li class="mobile__sort-item-btn">
+              <button class="sort__btn-grid sort__filter-btn sort__btn-active">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.66667 2H2V6.66667H6.66667V2Z" stroke="#333333" stroke-width="1.33333"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M14.0007 2H9.33398V6.66667H14.0007V2Z" stroke="#333333" stroke-width="1.33333"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M14.0007 9.33301H9.33398V13.9997H14.0007V9.33301Z" stroke="#333333" stroke-width="1.33333"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M6.66667 9.33301H2V13.9997H6.66667V9.33301Z" stroke="#333333" stroke-width="1.33333"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg></button>
+            </li>
+            <li class="mobile__sort-item-btn">
+              <button class="sort__btn-list sort__filter-btn">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.33398 4H14.0007" stroke="#333333" stroke-width="1.33333" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M5.33398 8H14.0007" stroke="#333333" stroke-width="1.33333" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M5.33398 12H14.0007" stroke="#333333" stroke-width="1.33333" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M2 4H2.00667" stroke="#333333" stroke-width="1.33333" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M2 8H2.00667" stroke="#333333" stroke-width="1.33333" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M2 12H2.00667" stroke="#333333" stroke-width="1.33333" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </li>
+
+          </ul>
+          <ul class="mobile__teg-list">
+            <li class="mobile__teg-item mobile__teg-item-active">
+              <a href="#">Для охоты</a>
+              <p>(23)</p>
+            </li>
+            <li class="mobile__teg-item">
+              <a href="#">Недорогие модели</a>
+              <p>(18)</p>
+            </li>
+            <li class="mobile__teg-item">
+              <a href="#">Выделенный тег</a>
+              <p>(64)</p>
+            </li>
+            <li class="mobile__teg-item">
+              <a href="#">Любой тег</a>
+              <p>(134)</p>
+            </li>
+            <li class="mobile__teg-item">
+              <a href="#">Для птиц</a>
+              <p>(64)</p>
+            </li>
+          </ul>
+          <ul class="mobile__sorting-list">
+            <li class="mobile__sorting-item mobile__sorting-item-active"><a href="#">По новизне</a></li>
+            <li class="mobile__sorting-item"><a href="#">По цене</a></li>
+            <li class="mobile__sorting-item"><a href="#">По алфавиту</a></li>
+            <li class="mobile__sorting-item"><a href="#">По популярности</a></li>
+            <li class="mobile__sorting-item"><a href="#">По отзывам</a></li>
+          </ul>
+        </div>
         <div class="catalog__filter">
           <ul class="catalog-list">
             <li class="catalog-link">
@@ -508,8 +582,8 @@
           </ul>
           <div class="catalog-sort__btn">
             <p class="catalog-sort__view">Вид:</p>
-            <button class="sort__btn-grid sort__filter-btn sort__btn-active"><svg width="16" height="16"
-                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="sort__btn-grid sort__filter-btn sort__btn-active">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.66667 2H2V6.66667H6.66667V2Z" stroke="#333333" stroke-width="1.33333" stroke-linecap="round"
                   stroke-linejoin="round" />
                 <path d="M14.0007 2H9.33398V6.66667H14.0007V2Z" stroke="#333333" stroke-width="1.33333"
@@ -1533,7 +1607,7 @@
       </div>
 
       <!-- Watched -->
-
+      <!--  
       <section class="watched">
         <h3 class="watched-title title">Вы недавно смотрели</h3>
 
@@ -1667,7 +1741,7 @@
 
 
 
-
+-->
 
 
 
@@ -1681,6 +1755,46 @@
   </div>
   </section>
 
+
+  <!-- Popap window -->
+  <div class="wrapper"></div>
+
+  <div id="popup" class="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <div class="popup__title">Написать отзыв</div>
+        <div class="form-box">
+          <form class="popup__form">
+            <label>
+              <p class="form-title">Ваше имя<span>*</span></p>
+              <input type="text" name="username" value="" placeholder="Имя">
+            </label>
+            <label>
+              <p class="form-title">Город<span>*</span></p>
+              <input type="text" name="city" value="" placeholder="Город">
+            </label>
+            <label>
+              <p class="form-title">Ваш e-mail</p>
+              <input type="text" name="email" value="" placeholder="E-mail">
+            </label>
+            <p class="form-title">Оценка</p>
+            <div class="form-rate-box">
+              <a class="rate" href="#">
+                <div class="rate-yo-form" data-rateyo-rating='4'></div>
+              </a>
+            </div>
+            <label>
+              <p class="form-title">Отзыв<span>*</span></p>
+              <textarea name="review" placeholder="Напишите ваш отзыв"></textarea>
+            </label>
+          </form>
+        </div>
+        <div class="form-btn-box">
+          <button class="form-btn">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- Footer -->

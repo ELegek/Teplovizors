@@ -63,6 +63,20 @@
   }
 }
 
+@media (max-width: 1120px) {
+  .catalog__inner-item {
+    width: 48%;
+  }
+
+  .catalog__inner-img {
+    margin: 0 auto;
+  }
+
+  .catalog__inner-buttons {
+    justify-content: space-around;
+  }
+}
+
 @media (max-width: 1060px) {
   .services__wrapper {
     flex-wrap: wrap;
@@ -283,6 +297,8 @@
   .guarantee-wrapper {
     padding-bottom: 0;
   }
+
+
 }
 
 @media (max-width: 930px) {
@@ -570,6 +586,11 @@
   .contact_form {
     min-width: 100%;
   }
+
+  .delivery-item {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media (max-width: 420px) {
@@ -629,5 +650,21 @@
 
   .contact_form-title {
     font-size: 20px;
+  }
+
+  .exchange-title {
+    font-size: 20px;
+  }
+
+  .guarantee-subtitle-delivery {
+    &:after {
+      display: none;
+    }
+  }
+
+  .guarantee-subtitle-mail {
+    &:after {
+      display: none;
+    }
   }
 }

@@ -120,6 +120,51 @@ $(function () {
         $(this).next().slideToggle();
     });
 
+
+
+
+    // Кнопки переключения тегов
+    $('.catalog-link').on('click', function (e) {
+        e.preventDefault();
+        $('.catalog-link').removeClass('catalog-link__active')
+        $(this).addClass('catalog-link__active');
+    });
+
+    // Кнопки сортировки фильтра
+    $('.catalog-sort__link').on('click', function (e) {
+        e.preventDefault();
+        $('.catalog-sort__link').removeClass('catalog-sort__link-active')
+        $(this).addClass('catalog-sort__link-active');
+    });
+
+    // Кнопки переключения мобильных тегов
+
+    $('.mobile__teg-item').on('click', function (e) {
+        e.preventDefault();
+        $('.mobile__teg-item').removeClass('mobile__teg-item-active')
+        $(this).addClass('mobile__teg-item-active');
+    });
+
+    // Кнопки тега и сортировки
+
+    $('.teg').on('click', function () {
+        $('.mobile__sorting-list').removeClass('mobile__sorting-list-active')
+        $('.mobile__teg-list').toggleClass('mobile__teg-list-active')
+    });
+
+    $('.sorting').on('click', function () {
+        $('.mobile__teg-list').removeClass('mobile__teg-list-active')
+        $('.mobile__sorting-list').toggleClass('mobile__sorting-list-active')
+    });
+
+    // Переключение мобильных кнопок сортировки
+    $('.mobile__sorting-item').on('click', function (e) {
+        e.preventDefault();
+        $('.mobile__sorting-item').removeClass('mobile__sorting-item-active')
+        $(this).addClass('mobile__sorting-item-active');
+    });
+
+
     // Кнопки переключения просмотра в каталоге товаров
 
 
