@@ -469,14 +469,16 @@
         </div>
         <div class="mobile__sort">
           <ul class="mobile__sort-list">
-            <li class="mobile__sort-item">
+            <li class="mobile__sort-icon"><i class="fas fa-sort-amount-down-alt teg"></i></li>
+            <li class="mobile__sort-icon"><i class="fas fa-sort-amount-down-alt sorting"></i></li>
+            <li class="mobile__sort-item teg">
               <button class="mobile__sort-btn teg">Теги</button>
             </li>
-            <li class="mobile__sort-item">
+            <li class="mobile__sort-item teg">
               <button class="mobile__sort-btn sorting">Сортировка</button>
             </li>
             <li class="mobile__sort-item">
-              <a href="#popup" class="reviews__btn popup-link">Добавить отзыв</a>
+              <a href="#popup" class="mobile__sort-btn popup-link">Фильтры</a>
             </li>
             <li class="mobile__sort-item-btn">
               <button class="sort__btn-grid sort__filter-btn sort__btn-active">
@@ -1762,34 +1764,170 @@
   <div id="popup" class="popup">
     <div class="popup__body">
       <div class="popup__content">
-        <div class="popup__title">Написать отзыв</div>
-        <div class="form-box">
-          <form class="popup__form">
-            <label>
-              <p class="form-title">Ваше имя<span>*</span></p>
-              <input type="text" name="username" value="" placeholder="Имя">
-            </label>
-            <label>
-              <p class="form-title">Город<span>*</span></p>
-              <input type="text" name="city" value="" placeholder="Город">
-            </label>
-            <label>
-              <p class="form-title">Ваш e-mail</p>
-              <input type="text" name="email" value="" placeholder="E-mail">
-            </label>
-            <p class="form-title">Оценка</p>
-            <div class="form-rate-box">
-              <a class="rate" href="#">
-                <div class="rate-yo-form" data-rateyo-rating='4'></div>
-              </a>
-            </div>
-            <label>
-              <p class="form-title">Отзыв<span>*</span></p>
-              <textarea name="review" placeholder="Напишите ваш отзыв"></textarea>
-            </label>
-          </form>
-        </div>
-        <div class="form-btn-box">
+        <form class="aside-filter__form">
+          <ul class="aside-filter__list">
+            <li class="aside-filter__item-drop">
+              <p class="aside-filter__item-title fliter__item-drop fliter__item-drop--active">Цена, руб</p>
+              <div class="aside-filter__item-content">
+                <input type="text" class="js-range-slider" name="my_range" value="" />
+              </div>
+            </li>
+            <li class="aside-filter__item-drop">
+              <p class="aside-filter__item-title fliter__item-drop fliter__item-drop--active">Диаметр объектива, мм
+              </p>
+              <div class="aside-filter__item-content">
+                <input type="text" class="js-range-slider" name="my_range" value="" />
+              </div>
+            </li>
+            <li class="aside-filter__item-drop">
+              <p class="aside-filter__item-title fliter__item-drop fliter__item-drop--active">Пример чекбоксов</p>
+              <div class="aside-filter__item-content">
+                <div class="aside-filter-box">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    Вариант без галочки<span>344</span>
+                  </label>
+                </div>
+                <div class="aside-filter-box">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    Выбранный вариант<span>18</span>
+                  </label>
+                </div>
+                <div class="aside-filter-box inactive">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    Неактивный<span>0</span>
+                  </label>
+                </div>
+                <div class="aside-filter-box">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    Еще выбранный чекбокс<span>28</span>
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li class="aside-filter__item-drop">
+              <p class="aside-filter__item-title fliter__item-drop fliter__item-drop--active">Длинный список</p>
+              <div class="aside-filter__item-content">
+                <div class="aside-filter-box">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    До 20 дюймов<span>344</span>
+                  </label>
+                </div>
+                <div class="aside-filter-box">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    20 – 29 дюймов<span>18</span>
+                  </label>
+                </div>
+                <div class="aside-filter-box">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    30 – 39 дюймов<span>12</span>
+                  </label>
+                </div>
+                <div class="aside-filter-box">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    40 – 49 дюймов<span>28</span>
+                  </label>
+                </div>
+                <div class="aside-filter-box">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    50 – 59 дюймов<span>12</span>
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li class="aside-filter__item-drop">
+              <p class="aside-filter__item-title fliter__item-drop fliter__item-drop--active">Длинный список</p>
+              <div class="aside-filter__item-content">
+                <div class="aside-filter-box">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    До 20 дюймов<span>344</span>
+                  </label>
+                </div>
+                <div class="aside-filter-box">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    20 – 29 дюймов<span>18</span>
+                  </label>
+                </div>
+                <div class="aside-filter-box">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    30 – 39 дюймов<span>12</span>
+                  </label>
+                </div>
+                <div class="aside-filter-box">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    40 – 49 дюймов<span>28</span>
+                  </label>
+                </div>
+                <div class="aside-filter-box">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    50 – 59 дюймов<span>12</span>
+                  </label>
+                </div>
+                <div class="aside-filter-box">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    50 – 59 дюймов<span>12</span>
+                  </label>
+                </div>
+                <div class="aside-filter-box">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    50 – 59 дюймов<span>12</span>
+                  </label>
+                </div>
+                <div class="aside-filter-box">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    50 – 59 дюймов<span>12</span>
+                  </label>
+                </div>
+                <div class="aside-filter-box">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    50 – 59 дюймов<span>12</span>
+                  </label>
+                </div>
+                <div class="aside-filter-box">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    50 – 59 дюймов<span>12</span>
+                  </label>
+                </div>
+                <div class="aside-filter-box">
+                  <label>
+                    <input class="filter-style" type="checkbox">
+                    50 – 59 дюймов<span>12</span>
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li class="aside-filter__item-drop">
+              <p class="aside-filter__item-title fliter__item-drop fliter__item-drop--active">Скрытая категория</p>
+            </li>
+            <li class="aside-filter__item-drop">
+              <p class="aside-filter__item-title fliter__item-drop fliter__item-drop--active">Фильтр</p>
+              <div class="aside-filter__item-content">
+                <input type="text" class="js-range-slider" name="my_range" value="" />
+              </div>
+            </li>
+          </ul>
+
+        </form>
+        <div class="filter__btn-box">
+          <button class="aside-filter-btn">Сбросить фильтры</button>
           <button class="form-btn">Отправить</button>
         </div>
       </div>

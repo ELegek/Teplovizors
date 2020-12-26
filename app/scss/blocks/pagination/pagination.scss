@@ -6,11 +6,12 @@
 }
 
 .pagination-list {
-  width: 40%;
+  min-width: 360px;
   display: flex;
   justify-content: center;
 
   position: relative;
+  padding: 0 35px;
 
   &:before {
     position: absolute;
