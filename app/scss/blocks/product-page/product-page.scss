@@ -6,6 +6,7 @@
   padding: 40px 30px;
   background: #FFFFFF;
   border-radius: 7px;
+  position: relative;
 }
 
 .product-page_title {
@@ -71,6 +72,14 @@
     display: inline-block;
   }
 }
+
+.product-slider__img {
+  img {
+    width: 100%;
+  }
+}
+
+.product-sliderbig__logo {}
 
 
 // product-content ============================
@@ -353,7 +362,10 @@
 }
 
 .product-sliderbig__logo {
-  text-align: left;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1;
 }
 
 .product-slidersmall__item {

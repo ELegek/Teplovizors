@@ -94,6 +94,12 @@ $(function () {
         arrows: false,
         fade: true,
         asNavFor: '.product-slidersmall',
+        responsive: [{
+            breakpoint: 521,
+            settings: {
+                fade: false,
+            }
+        }, ]
     });
 
     $('.product-slidersmall').slick({
@@ -233,6 +239,30 @@ if (tabsTriggerItem.length > 0) {
         })
     );
     document.querySelector('.tabs-triggers__item').click();
+}
+// Tabs reviews ==========
+const tabsTriggerItemRevies = document.querySelectorAll('.reviews-triggers__item');
+if (tabsTriggerItemRevies.length > 0) {
+    tabsTriggerItemRevies.forEach((item) =>
+
+        item.addEventListener('click', function (e) {
+            e.preventDefault();
+            const id = e.target.getAttribute('href').replace('#', '');
+
+            document.querySelectorAll('.reviews-triggers__item').forEach(
+                (child) => child.classList.remove('reviews-triggers__item--active')
+            );
+            document.querySelectorAll('.reviews-content__item').forEach(
+                (child) => child.classList.remove('reviews-content__item--active')
+            );
+
+            item.classList.add('reviews-triggers__item--active');
+            document.getElementById(id).classList.add('reviews-content__item--active');
+
+
+        })
+    );
+    document.querySelector('.reviews-triggers__item').click();
 }
 
 

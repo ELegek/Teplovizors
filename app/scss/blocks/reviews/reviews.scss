@@ -30,7 +30,7 @@
   transition: all .2s ease;
 }
 
-.reviews-triggers__item.tabs-triggers__item--active {
+.reviews-triggers__item.reviews-triggers__item--active {
   font-weight: 600;
   color: #01274F;
   position: relative;
@@ -46,6 +46,10 @@
 }
 
 .reviews-content__item {
+  display: none;
+}
+
+.reviews-content__box {
   display: flex;
   justify-content: space-between;
 }

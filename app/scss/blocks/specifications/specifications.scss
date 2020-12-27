@@ -1,7 +1,5 @@
 .specifications__inner {
   padding: 0 30px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid rgba(1, 39, 79, .15);
 }
 
 .specifications__list {
@@ -19,7 +17,8 @@
   background: rgba(2, 65, 132, 0.05);
 }
 
-.specifications__text {
+.specifications__text,
+.specifications__result {
   display: inline-block;
   width: 50%;
 

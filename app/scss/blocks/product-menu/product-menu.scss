@@ -2,8 +2,7 @@
   background-color: #fff;
   border-radius: 7px;
   overflow: hidden;
-  padding-bottom: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 
@@ -38,8 +37,17 @@
 
 }
 
+
+.product-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .product-menu__link {
   position: relative;
+  padding: 20px 10px;
+  cursor: pointer;
 
   &:after {
     content: url(../../../images/product-menu__arrow.svg);

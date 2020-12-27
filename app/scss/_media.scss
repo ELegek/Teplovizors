@@ -68,7 +68,13 @@
     margin-bottom: 20px;
   }
 
+  .product-wrapper {
+    padding: 20px 15px;
+  }
 
+  .page {
+    padding-bottom: 20px;
+  }
 }
 
 @media (max-width: 1120px) {
@@ -332,6 +338,22 @@
   }
 }
 
+@media (max-width: 950px) {
+  .product-wrapper {
+    flex-direction: column;
+  }
+
+  .product-item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .product-content {
+    padding: 0;
+    border: none;
+  }
+}
+
 @media (max-width: 930px) {
   .header__menu {
     display: none;
@@ -392,6 +414,27 @@
       display: none;
     }
 
+  }
+
+  .product-about__wrap {
+    flex-direction: column;
+  }
+
+  .product-about-left,
+  .product-about-right {
+    width: 100%;
+  }
+
+  .product-about-item__title:before {
+    display: none;
+  }
+
+  .product-about-item__title {
+    padding-left: 0;
+  }
+
+  .product-about-item__text {
+    padding-left: 0;
   }
 }
 
@@ -505,6 +548,23 @@
     .btn {
       margin: 0 auto;
     }
+  }
+
+  .product-menu {
+    flex-direction: column;
+  }
+
+  .product-menu__link:after {
+    top: 16px;
+  }
+
+  .specifications__result {
+    text-align: right;
+    width: 16%;
+  }
+
+  .specifications__text {
+    width: 60%;
   }
 }
 
@@ -669,6 +729,14 @@
   .mobile__sort-item {
     width: 65%;
   }
+
+  .product-slidersmall {
+    display: none;
+  }
+
+  .product__title {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -701,6 +769,57 @@
 
   .aside-filter-btn {
     margin-bottom: 15px;
+  }
+
+  .product-box__btn {
+    .product-btn {
+      display: none;
+    }
+
+    .catalog__inner-button {
+      margin: 0 auto;
+    }
+  }
+
+  .product-descr__list {
+    display: none;
+  }
+
+  .product-item {
+    margin: 0;
+  }
+
+  .product-about__right-item:before {
+    display: none;
+  }
+
+  .product-about__right-item {
+    padding-left: 0;
+  }
+
+  .product__title:before {
+    display: none;
+  }
+
+  .product__title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .specifications__result {
+    width: 25%;
+  }
+
+  .specifications__item {
+    padding: 4px 7px;
+  }
+
+  .specifications__text {
+    font-size: 10px;
+  }
+
+  .specifications__result {
+    font-size: 10px;
   }
 }
 
@@ -761,5 +880,13 @@
 
   .mobile__sort-item {
     width: 50%;
+  }
+
+  .product-page__line-left {
+    flex-direction: column;
+  }
+
+  .product-page__feedback {
+    margin: 0;
   }
 }
