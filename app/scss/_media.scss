@@ -560,6 +560,24 @@
       margin-bottom: 20px;
     }
   }
+
+  .guarantee-wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+
+    margin-bottom: 20px;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .sidebar-list__item {
+    padding: 10px;
+  }
 }
 
 
@@ -1162,5 +1180,15 @@
 
   .product-page__feedback {
     margin: 0;
+  }
+
+  .profile-btn {
+    display: flex;
+    flex-direction: column;
+
+    .btn {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
   }
 }
