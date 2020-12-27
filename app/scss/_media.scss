@@ -394,6 +394,20 @@
   .advantages-icon {
     margin: 0 auto;
   }
+
+  .reviews-content__box {
+    flex-direction: column;
+  }
+
+  .reviews-content__rate {
+    padding-top: 0;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .reviews-content__review {
+    width: 100%;
+  }
 }
 
 @media (max-width: 790px) {
@@ -657,6 +671,15 @@
 
   .mobile__sort-item.sorting {
     display: none;
+  }
+
+  .reviews-triggers {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .review-box {
+    padding: 10px;
   }
 
 }
