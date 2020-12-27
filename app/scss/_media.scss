@@ -61,6 +61,15 @@
   .services__item {
     width: 33.3333%;
   }
+
+  .watched-scroll {
+    overflow-x: scroll;
+    border-radius: 7px;
+  }
+
+  .watched-box {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 1120px) {
@@ -145,7 +154,7 @@
   }
 
   .title {
-    font-size: 38px;
+    font-size: 32px;
   }
 
   .popular__inner {
@@ -314,6 +323,14 @@
     display: none;
   }
 
+  .watched-box {
+    margin-bottom: 0;
+  }
+
+
+  .watched-title {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 930px) {
