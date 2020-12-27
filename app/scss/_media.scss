@@ -114,6 +114,15 @@
     width: 48%;
     margin-bottom: 20px;
   }
+
+  .accordeon_content-name {
+    width: 30%;
+  }
+
+  .accordeon_content-total,
+  .accordeon_content-price {
+    width: 20%;
+  }
 }
 
 @media (max-width: 990px) {
@@ -322,7 +331,7 @@
   }
 
   .guarantee-wrapper {
-    padding-bottom: 0;
+    padding-bottom: 30px;
   }
 
   .mobile__sort {
@@ -360,6 +369,24 @@
 
   .registration__feedback {
     padding-bottom: 30px;
+  }
+
+  .accordeon_title-number {
+    font-size: 10px;
+    margin-right: 10px;
+  }
+
+  .accordeon_title-price {
+    font-size: 10px;
+    margin-right: 30px;
+  }
+
+  .accordeon_title-condition {
+    font-size: 10px;
+  }
+
+  .accordeon_title-data {
+    font-size: 10px;
   }
 }
 
@@ -469,6 +496,31 @@
   .registration__footer-btn {
     width: 100%;
   }
+
+  .accordeon_content-quantity {
+    display: none;
+  }
+
+  .accordeon_content-price {
+    display: none;
+  }
+
+  .accordeon_content-name {
+    width: 35%;
+  }
+
+  .accordeon_content-total {
+    width: 27%;
+  }
+
+
+  .accordion-item {
+    width: 48%;
+  }
+
+  .accordeon_delivery {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 790px) {
@@ -573,6 +625,7 @@
 
   .main {
     width: 100%;
+    padding: 20px 30px;
   }
 
   .sidebar-list__item {
@@ -847,6 +900,18 @@
     padding: 10px;
   }
 
+  .accordeon_title-condition {
+    display: none;
+  }
+
+  .accordeon_title-data {
+    display: none;
+  }
+
+  .accordeon_item {
+    padding: 15px 20px;
+  }
+
 }
 
 @media (max-width: 520px) {
@@ -975,6 +1040,28 @@
     font-size: 12px;
   }
 
+  .accordeon_content-list {
+    flex-direction: column;
+  }
+
+  .accordeon_content-name {
+    width: 100%;
+    text-align: center;
+  }
+
+  .accordeon_content-total {
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .accordion-footer {
+    flex-direction: column;
+  }
+
+  .accordion-item {
+    width: 100%;
+  }
 }
 
 @media (max-width: 420px) {
@@ -1190,5 +1277,17 @@
       margin-right: 0;
       margin-bottom: 15px;
     }
+  }
+
+  .accordeon_title:after {
+    right: -20px;
+  }
+
+  .accordeon_title-price {
+    margin-right: 0;
+  }
+
+  .accordeon_title {
+    justify-content: space-between;
   }
 }

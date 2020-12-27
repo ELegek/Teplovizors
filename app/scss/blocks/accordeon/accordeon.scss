@@ -95,16 +95,11 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-
-  li {
-    width: 20%;
-
-  }
 }
 
 .accordeon_content-name,
-.accordeon_content-price,
-.accordeon_content-quantity {
+.accordeon_content-price {
+  width: 25%;
   font-weight: normal;
   font-size: 14px;
   line-height: 22px;
@@ -112,6 +107,10 @@
   color: #333333;
 
   text-align: right;
+}
+
+.accordeon_content-quantity {
+  width: 10%;
 }
 
 .accordeon_content-total {
