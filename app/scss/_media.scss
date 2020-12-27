@@ -65,11 +65,10 @@
   .watched-scroll {
     overflow-x: scroll;
     border-radius: 7px;
+    margin-bottom: 20px;
   }
 
-  .watched-box {
-    margin-bottom: 0;
-  }
+
 }
 
 @media (max-width: 1120px) {
@@ -596,6 +595,10 @@
   }
 
 
+  .mobile__sort-item.sorting {
+    display: none;
+  }
+
 }
 
 @media (max-width: 520px) {
@@ -685,6 +688,19 @@
 
   .payment-item {
     width: 47%;
+  }
+
+  .filter__btn-box {
+    display: block;
+
+    .form-btn {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .aside-filter-btn {
+    margin-bottom: 15px;
   }
 }
 
