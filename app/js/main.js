@@ -215,6 +215,14 @@ $(function () {
         $('.catalog__inner-item').addClass('catalog__inner-item--list');
     });
 
+
+    // Кнопка выбора доставки
+
+    $('.registration__delivery-item').on('click', function () {
+        $('.registration__delivery-item').removeClass('registration__delivery-item-active')
+        $(this).toggleClass('registration__delivery-item-active')
+    });
+
     // Аккордеон
 
     $(function () {

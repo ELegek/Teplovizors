@@ -349,6 +349,18 @@
   .watched-title {
     margin-bottom: 20px;
   }
+
+  .registration__delivery-wrap {
+    width: 60%;
+  }
+
+  .registration__delivery-price {
+    width: 35%;
+  }
+
+  .registration__feedback {
+    padding-bottom: 30px;
+  }
 }
 
 @media (max-width: 950px) {
@@ -430,6 +442,32 @@
   .form-item {
     margin-bottom: 30px;
     min-width: 450px;
+  }
+
+  .registration__wrapper {
+    padding: 20px;
+  }
+
+  .registration__footer {
+    padding-top: 20px;
+    flex-direction: column;
+  }
+
+  .registration__footer-list {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .registration__footer-price {
+    text-align: right;
+  }
+
+  .registration__footer-text.right {
+    text-align: right;
+  }
+
+  .registration__footer-btn {
+    width: 100%;
   }
 }
 
@@ -513,6 +551,15 @@
     margin-top: 20px;
     text-align: center;
   }
+
+  .registration__delivery-wrap__price {
+    flex-wrap: wrap;
+
+    .registration__delivery-item {
+      width: 33.333%;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 
@@ -595,6 +642,43 @@
 
   .breadcrumbs__list {
     min-width: 500px;
+  }
+
+  .registration__form {
+    flex-direction: column;
+
+    label {
+      width: 100%;
+    }
+  }
+
+  .registration__delivery {
+    align-items: center;
+  }
+
+  .registration__delivery-wrap {
+    flex-wrap: wrap;
+  }
+
+  .registration__delivery-item {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+
+  .registration__delivery-price {
+    flex-direction: column;
+
+  }
+
+  .registration__delivery-price__item {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .registration__feedback-form {
+    textarea {
+      width: 100%;
+    }
   }
 }
 
@@ -852,6 +936,27 @@
   .form-item {
     min-width: 100%;
   }
+
+  .registration__title {
+    text-align: center;
+  }
+
+  .registration__delivery-wrap__price {
+    .registration__delivery-item {
+      width: 48%;
+    }
+  }
+
+  .registration__footer-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .registration__footer-item,
+  .registration__footer-price {
+    font-size: 12px;
+  }
+
 }
 
 @media (max-width: 420px) {
@@ -973,6 +1078,23 @@
       margin: 0;
     }
   }
+
+  .registration__delivery {
+    flex-direction: column;
+  }
+
+  .registration__delivery-wrap {
+    width: 100%;
+  }
+
+  .registration__delivery-price {
+    width: 100%;
+    border: none;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+
 }
 
 @media (max-width: 380px) {
