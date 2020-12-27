@@ -83,6 +83,14 @@
   .authorization_link:after {
     display: none;
   }
+
+  .favorite-wrapper {
+    flex-wrap: wrap;
+
+    .catalog__inner-item {
+      width: 48%;
+    }
+  }
 }
 
 @media (max-width: 1120px) {
@@ -1061,6 +1069,14 @@
 
   .accordion-item {
     width: 100%;
+  }
+
+  .favorite-wrapper {
+
+
+    .catalog__inner-item {
+      width: 100%;
+    }
   }
 }
 
