@@ -38,6 +38,21 @@
   margin-left: 35px;
 }
 
+
+.authorization__form-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .authorization-btn {
+    width: 34%;
+  }
+
+  .product-btn {
+    width: 60%;
+  }
+}
+
 .authorization__form-btn.line {
   padding-bottom: 35px;
   border-bottom: 1px solid rgba(1, 39, 79, .15);
